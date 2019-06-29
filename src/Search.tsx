@@ -1,19 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { findPlayer } from "./repository/PlayerRepository";
 import PlayerAccount from "./domain/PlayerAccount";
+import Axios from "axios";
+
+const cancelHandle = Axios.CancelToken.source();
 
 export default () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<PlayerAccount[]>([]);
 
-  const doSearch = async () => {
-    const result = await findPlayer(query);
-    console.log(result);
+  const doSearch = useCallback(async () => {
+    const result = await findPlayer(query, {
+      cancelToken: cancelHandle.token
+    });
     if (result.length !== 0) {
       setResult(result);
     }
-  };
+  }, [query]);
+
+  useEffect(() => () => cancelHandle.cancel(), []);
   return (
     <form
       onSubmit={e => {
