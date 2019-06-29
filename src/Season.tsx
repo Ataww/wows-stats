@@ -17,6 +17,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
   const [ships, setShips] = useState<IdIndexedData<Warship>>({});
   const [isLoaded, setLoaded] = useState(false);
   const [delay, setDelay] = useState(false);
+  const [error, setError] = useState<string>();
 
   useEffect(() => {
     const timeout = setTimeout(() => setDelay(true), 300);
@@ -44,10 +45,15 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
   useEffect(() => {
     getRankedStats(id, seasonId, {}, { cancelToken: cancelHandle.token }).then(
       response => {
+        const stats = response.data[id];
+        if (!stats) {
+          cancelHandle.cancel();
+          setError("Player has not played during season");
+        }
         setStats(response.data[id]);
       }
     );
-  }, [id, seasonId, cancelHandle.token]);
+  }, [id, seasonId, cancelHandle.token, cancelHandle]);
 
   useEffect(() => {
     getRankedShipsStats(
@@ -74,7 +80,17 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
     }
   }, [shipStats, id, cancelHandle.token]);
 
-  return isLoaded && delay ? (
+  if (error && delay) {
+    return (
+      <div>
+        <h3>Error</h3>
+        <p>{error}</p>
+      </div>
+    );
+  } else if (!(delay && isLoaded)) {
+    return <Loading />;
+  }
+  return (
     <div>
       <div className="season-stats">
         <h3>Season {seasonId}</h3>
@@ -127,7 +143,5 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
         </table>
       </div>
     </div>
-  ) : (
-    <Loading />
   );
 };
