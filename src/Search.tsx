@@ -1,23 +1,26 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { findPlayer } from "./repository/PlayerRepository";
 import PlayerAccount from "./domain/PlayerAccount";
 import Axios from "axios";
-
-const cancelHandle = Axios.CancelToken.source();
+import { Loading } from "./components";
 
 export default () => {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState<PlayerAccount>();
+  const [isSearching, setSearching] = useState(false);
 
+  const cancelHandle = useMemo(() => Axios.CancelToken.source(), []);
   const doSearch = useCallback(async () => {
+    setSearching(true);
     const found = await findPlayer(query, {
       cancelToken: cancelHandle.token
     });
     setResult(Object.values(found.data)[0]);
-  }, [query]);
+    setSearching(false);
+  }, [query, cancelHandle.token]);
 
-  useEffect(() => () => cancelHandle.cancel(), []);
+  useEffect(() => () => cancelHandle.cancel(), [cancelHandle]);
   return (
     <form
       onSubmit={e => {
@@ -35,8 +38,10 @@ export default () => {
         <button onClick={doSearch}>Search</button>
       </div>
       <div>
-        {result && (
+        {result ? (
           <Link to={`profile/${result.account_id}`}>{result.nickname}</Link>
+        ) : (
+          isSearching && <Loading text="Searching" />
         )}
       </div>
     </form>

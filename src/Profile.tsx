@@ -1,17 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { getPlayerProfile } from "./repository/PlayerRepository";
 import { Link } from "react-router-dom";
+import { Loading } from "./components";
 
 export default ({ id }: { id: number }) => {
   const [user, setUser] = useState<any>(undefined);
+  const [isLoaded, setLoaded] = useState(false);
+  const [delay, setDelay] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => setDelay(true), 300);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
   useEffect(() => {
     getPlayerProfile(id).then(response => {
       setUser(response.data[id]);
+      setLoaded(true);
     });
   }, [id]);
 
-  return user === undefined ? (
-    <div>Loading...</div>
+  return !(isLoaded && delay) ? (
+    <Loading />
   ) : (
     <div>
       <h1>{user.nickname}</h1>

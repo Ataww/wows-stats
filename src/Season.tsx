@@ -1,5 +1,5 @@
 import Axios from "axios";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { RankedStats } from "./domain/PlayerStats";
 import Warship from "./domain/Ship";
 import { PlayerShipRankedStats } from "./domain/ShipStats";
@@ -9,19 +9,26 @@ import {
 } from "./repository/RankedRepository";
 import { getShips } from "./repository/ShipRepository";
 import { IdIndexedData } from "./domain/ApiResponse";
-
-const cancelHandle = Axios.CancelToken.source();
+import { Loading } from "./components";
 
 export default ({ id, seasonId }: { id: number; seasonId: number }) => {
   const [stats, setStats] = useState<RankedStats>();
   const [shipStats, setShipStats] = useState<PlayerShipRankedStats>();
   const [ships, setShips] = useState<IdIndexedData<Warship>>({});
   const [isLoaded, setLoaded] = useState(false);
-
-  useEffect(() => () => cancelHandle.cancel(), []);
+  const [delay, setDelay] = useState(false);
 
   useEffect(() => {
-    console.log(Object.keys(ships).length);
+    const timeout = setTimeout(() => setDelay(true), 300);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+
+  const cancelHandle = useMemo(() => Axios.CancelToken.source(), []);
+  useEffect(() => () => cancelHandle.cancel(), [cancelHandle]);
+
+  useEffect(() => {
     if (
       stats &&
       stats.seasons[seasonId] &&
@@ -40,7 +47,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
         setStats(response.data[id]);
       }
     );
-  }, [id, seasonId]);
+  }, [id, seasonId, cancelHandle.token]);
 
   useEffect(() => {
     getRankedShipsStats(
@@ -51,7 +58,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
     ).then(response => {
       setShipStats(response.data);
     });
-  }, [id, seasonId]);
+  }, [id, seasonId, cancelHandle.token]);
 
   useEffect(() => {
     if (shipStats && shipStats[id] && shipStats[id].length > 0) {
@@ -65,9 +72,9 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
         setShips(response.data);
       });
     }
-  }, [shipStats, id]);
+  }, [shipStats, id, cancelHandle.token]);
 
-  return isLoaded ? (
+  return isLoaded && delay ? (
     <div>
       <div className="season-stats">
         <h3>Season {seasonId}</h3>
@@ -121,6 +128,6 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
       </div>
     </div>
   ) : (
-    <div>Loading...</div>
+    <Loading />
   );
 };
