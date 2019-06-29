@@ -1,11 +1,9 @@
-import ShipType from "../domain/ShipType";
-import Warship from "../domain/Ship";
-import PlayerAccount from "../domain/PlayerAccount";
-import Axios from "axios";
-import { formatOptions } from "./util";
-import { ApiResponse } from "../domain/ApiResponse";
+import Axios, { AxiosRequestConfig } from "axios";
+import { ApiResponse, IdIndexedData } from "../domain/ApiResponse";
 import { RankedStats } from "../domain/PlayerStats";
-import { ShipRankedStats } from "../domain/ShipStats";
+import { PlayerShipRankedStats } from "../domain/ShipStats";
+import ShipType from "../domain/ShipType";
+import { formatOptions } from "./util";
 
 export interface PlayerRankedSearchOptions {
   fields?: string[];
@@ -20,28 +18,32 @@ export interface ShipRankedSearchOptions extends PlayerRankedSearchOptions {
 export async function getRankedStats(
   id: number,
   seasonId: number,
-  options: Omit<PlayerRankedSearchOptions, "season_id" | "account_id"> = {}
-): Promise<ApiResponse<RankedStats>> {
+  options: Omit<PlayerRankedSearchOptions, "season_id" | "account_id"> = {},
+  axiosOptions?: AxiosRequestConfig
+): Promise<ApiResponse<IdIndexedData<RankedStats>>> {
   const response = await Axios.get(
     `https://api.worldofwarships.eu/wows/seasons/accountinfo/?application_id=${
       process.env.REACT_APP_WG_APP_ID
-    }&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`
+    }&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
+    axiosOptions
   );
   if (response.status !== 200) {
     throw new Error("Ranked stats fetch failed");
   }
-  return response.data.data;
+  return response.data;
 }
 
 export async function getRankedShipsStats(
   id: number,
   seasonId: number,
-  options: Omit<ShipRankedSearchOptions, "season_id" | "account_id"> = {}
-): Promise<ApiResponse<ShipRankedStats>> {
+  options: Omit<ShipRankedSearchOptions, "season_id" | "account_id"> = {},
+  axiosOptions?: AxiosRequestConfig
+): Promise<ApiResponse<PlayerShipRankedStats>> {
   const response = await Axios.get(
     `https://api.worldofwarships.eu/wows/seasons/shipstats/?application_id=${
       process.env.REACT_APP_WG_APP_ID
-    }&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`
+    }&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
+    axiosOptions
   );
   if (response.status !== 200) {
     throw new Error("Ranked ship stats fetch failed");

@@ -9,5 +9,9 @@ export interface ResponseMetadata {
 export interface ApiResponse<T = any> {
   status: string;
   metadata: ResponseMetadata;
-  data: T[];
+  data: T;
+}
+
+export interface IdIndexedData<T = any> {
+  [id: number]: T;
 }

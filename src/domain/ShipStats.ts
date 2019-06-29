@@ -13,3 +13,7 @@ export interface ShipRankedStats {
   ship_id: number;
   account_id: number;
 }
+
+export interface PlayerShipRankedStats {
+  [id: number]: ShipRankedStats[];
+}
