@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Link, Route } from "react-router-dom";
 import "./App.css";
-import logo from "./logo.svg";
 import Profile from "./Profile";
 import Search from "./Search";
+import Season from "./Season";
 
 // 501235211
 const App: React.FC = () => {
@@ -11,23 +11,25 @@ const App: React.FC = () => {
     <div className="App">
       <BrowserRouter>
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Ranked stuffy stuff
-          </p>
+          <p>Ranked stuffy stuff</p>
           <Link to="/" className="App-link">
-            Main
+            Home
           </Link>
         </header>
-        <Route exact path="/" component={Search} />
-        <Route
-          path="/profile/:id"
-          render={({ match }) => <Profile id={match.params.id} />}
-        />
-        <Route
-          path="/profile/:id/stats/:season"
-          render={({ match }) => <div>Test</div>}
-        />
+        <main>
+          <Route exact path="/" component={Search} />
+          <Route
+            exact
+            path="/profile/:id"
+            render={({ match }) => <Profile id={match.params.id} />}
+          />
+          <Route
+            path="/profile/:id/season/:season"
+            render={({ match }) => (
+              <Season id={match.params.id} seasonId={match.params.season} />
+            )}
+          />
+        </main>
       </BrowserRouter>
     </div>
   );

@@ -8,15 +8,13 @@ const cancelHandle = Axios.CancelToken.source();
 
 export default () => {
   const [query, setQuery] = useState("");
-  const [result, setResult] = useState<PlayerAccount[]>([]);
+  const [result, setResult] = useState<PlayerAccount>();
 
   const doSearch = useCallback(async () => {
-    const result = await findPlayer(query, {
+    const found = await findPlayer(query, {
       cancelToken: cancelHandle.token
     });
-    if (result.length !== 0) {
-      setResult(result);
-    }
+    setResult(Object.values(found.data)[0]);
   }, [query]);
 
   useEffect(() => () => cancelHandle.cancel(), []);
@@ -37,10 +35,8 @@ export default () => {
         <button onClick={doSearch}>Search</button>
       </div>
       <div>
-        {result.length !== 0 && (
-          <Link to={`profile/${result[0].account_id}`}>
-            {result[0].nickname}
-          </Link>
+        {result && (
+          <Link to={`profile/${result.account_id}`}>{result.nickname}</Link>
         )}
       </div>
     </form>

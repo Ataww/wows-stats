@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 export default ({ id }: { id: number }) => {
   const [user, setUser] = useState<any>(undefined);
   useEffect(() => {
-    getPlayerProfile(id).then(data => {
-      setUser(data[id]);
+    getPlayerProfile(id).then(response => {
+      setUser(response.data[id]);
     });
   }, [id]);
 
