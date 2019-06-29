@@ -1,0 +1,743 @@
+{
+  "status": "ok",
+  "meta": { "count": 3, "page_total": 1, "total": 3, "limit": 100, "page": 1 },
+  "data": {
+    "4179539408": {
+      "description": "A ship designed and intended to destroy light enemy cruisers and fight against heavy cruisers (Project 66). Unlike her foreign counterparts, she boasted bigger dimensions and better armor protection. The cruiser's main battery surpassed foreign guns in maximum range and destructive power but had a lower rate of fire.",
+      "price_gold": 0,
+      "ship_id_str": "PRSC110",
+      "has_demo_profile": false,
+      "images": {
+        "small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PRSC110_b0e51720e691e7e5e52ae2d5924e23224cbc0533d9f1080ac3c29f183a92fec3.png",
+        "large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PRSC110_eaece42efb377ec0f1b4558c82943753bf80578ea32fdeb6b5ed1c044eccf8d3.png",
+        "medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PRSC110_74d3fba086689f2a7c7ed85ddb793de6bcba1a7e5179359aa71f31782dbecba6.png",
+        "contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PRSC110_d03b9c132902813be37be4f84cbd4cce588bdb5b662e399717aa15f1a3b44d9e.png"
+      },
+      "modules": {
+        "engine": [3339562448],
+        "torpedo_bomber": [],
+        "fighter": [],
+        "hull": [3339464144],
+        "artillery": [3350179280],
+        "torpedoes": [],
+        "fire_control": [3339103696],
+        "flight_control": [],
+        "dive_bomber": []
+      },
+      "modules_tree": {
+        "3339562448": {
+          "name": "Propulsion: 210,000 hp",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 1500000,
+          "next_ships": null,
+          "module_id": 3339562448,
+          "type": "Engine",
+          "module_id_str": "PRUE911"
+        },
+        "3339464144": {
+          "name": "Moskva (A)",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 2550000,
+          "next_ships": null,
+          "module_id": 3339464144,
+          "type": "Hull",
+          "module_id_str": "PRUH911"
+        },
+        "3350179280": {
+          "name": "220 mm/65 SM-6",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 2350000,
+          "next_ships": null,
+          "module_id": 3350179280,
+          "type": "Artillery",
+          "module_id_str": "PRUA901"
+        },
+        "3339103696": {
+          "name": "GFCS X mod. 1",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 1900000,
+          "next_ships": null,
+          "module_id": 3339103696,
+          "type": "Suo",
+          "module_id_str": "PRUS911"
+        }
+      },
+      "nation": "ussr",
+      "is_premium": false,
+      "ship_id": 4179539408,
+      "price_credit": 19500000,
+      "default_profile": {
+        "engine": {
+          "engine_id_str": "PRUE911",
+          "max_speed": 34.5,
+          "engine_id": 3339562448
+        },
+        "torpedo_bomber": null,
+        "anti_aircraft": {
+          "slots": {
+            "0": {
+              "distance": 0.1,
+              "avg_damage": 50,
+              "caliber": 25,
+              "name": "25 mm 4M-120",
+              "guns": 6
+            },
+            "1": {
+              "distance": 0.1,
+              "avg_damage": 123,
+              "caliber": 45,
+              "name": "45 mm SM-20-ZIF",
+              "guns": 6
+            },
+            "2": {
+              "distance": 0.2,
+              "avg_damage": 111,
+              "caliber": 130,
+              "name": "130 mm/60 BL-109A",
+              "guns": 4
+            }
+          },
+          "defense": 69
+        },
+        "mobility": {
+          "rudder_time": 10.9,
+          "total": 62,
+          "turning_radius": 1050,
+          "max_speed": 34.5
+        },
+        "hull": {
+          "hull_id": 3339464144,
+          "hull_id_str": "PRUH911",
+          "torpedoes_barrels": 0,
+          "anti_aircraft_barrels": 16,
+          "range": { "max": 300, "min": 6 },
+          "health": 65400,
+          "planes_amount": 0,
+          "artillery_barrels": 3,
+          "atba_barrels": 4
+        },
+        "atbas": {
+          "distance": 6.5,
+          "slots": {
+            "0": {
+              "burn_probability": 8.0,
+              "bullet_speed": 950,
+              "name": "HE-42",
+              "shot_delay": 4.0,
+              "damage": 1800,
+              "bullet_mass": 33,
+              "type": "HE",
+              "gun_rate": 15.0
+            }
+          }
+        },
+        "artillery": {
+          "max_dispersion": 167,
+          "shells": {
+            "AP": {
+              "burn_probability": null,
+              "bullet_speed": 985,
+              "name": "AP-23",
+              "damage": 5800,
+              "bullet_mass": 176,
+              "type": "AP"
+            },
+            "HE": {
+              "burn_probability": 17.0,
+              "bullet_speed": 985,
+              "name": "HE-23",
+              "damage": 3100,
+              "bullet_mass": 176,
+              "type": "HE"
+            }
+          },
+          "shot_delay": 10.0,
+          "rotation_time": 32.73,
+          "distance": 19.4,
+          "artillery_id": 3350179280,
+          "artillery_id_str": "PRUA901",
+          "slots": {
+            "0": { "barrels": 3, "name": "220 mm/65 SM-6", "guns": 3 }
+          },
+          "gun_rate": 5.8
+        },
+        "torpedoes": null,
+        "fighters": null,
+        "fire_control": {
+          "fire_control_id": 3339103696,
+          "distance": 19.4,
+          "distance_increase": 0,
+          "fire_control_id_str": "PRUS911"
+        },
+        "weaponry": {
+          "anti_aircraft": 69,
+          "aircraft": 0,
+          "artillery": 81,
+          "torpedoes": 0
+        },
+        "battle_level_range_max": 10,
+        "battle_level_range_min": 10,
+        "flight_control": null,
+        "concealment": {
+          "total": 26,
+          "detect_distance_by_plane": 9.4,
+          "detect_distance_by_ship": 18.0
+        },
+        "armour": {
+          "casemate": { "max": -1, "min": -1 },
+          "flood_prob": 28,
+          "deck": { "max": -1, "min": -1 },
+          "flood_damage": 25,
+          "range": { "max": 300, "min": 6 },
+          "health": 65400,
+          "extremities": { "max": -1, "min": -1 },
+          "total": 84,
+          "citadel": { "max": -1, "min": -1 }
+        },
+        "dive_bomber": null
+      },
+      "upgrades": [
+        4260548528,
+        4268937136,
+        4262645680,
+        4281520048,
+        4257402800,
+        4265791408,
+        4269985712,
+        4267888560,
+        4274180016,
+        4278374320,
+        4282568624,
+        4266839984,
+        4271034288,
+        4275228592,
+        4273131440,
+        4259499952,
+        4287811504,
+        4272082864,
+        4261597104,
+        4280471472
+      ],
+      "tier": 10,
+      "next_ships": {},
+      "mod_slots": 6,
+      "type": "Cruiser",
+      "is_special": false,
+      "name": "Moskva"
+    },
+    "4273911792": {
+      "description": "One of the best heavy cruisers in the world. The ship was designed using the experience gained in World War II, resulting in excellent protection and very powerful AA armament. The key distinctive feature of cruisers of this type was auto-loading main guns that had a very high rate of fire.",
+      "price_gold": 0,
+      "ship_id_str": "PASC020",
+      "has_demo_profile": false,
+      "images": {
+        "small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PASC020_6d8433ad54145db2092483c2e1a72af6be632ac638654dff0541c8f54f4106a7.png",
+        "large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PASC020_b26d342df4b3e5b587702c2b8d0cccf34b95d0db62bb17885d19ecbf18cd5529.png",
+        "medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PASC020_7937fab68447c7685ed8bd0042c5983d530b673b3173a5a9ce4788363dc03cd3.png",
+        "contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PASC020_c01516af2dabe38ebde75e1ee0100e64438a69f7702ad61c2d77556223563aa8.png"
+      },
+      "modules": {
+        "engine": [3349000176],
+        "torpedo_bomber": [],
+        "fighter": [],
+        "hull": [3349950448],
+        "artillery": [3350179824],
+        "torpedoes": [],
+        "fire_control": [3349590000],
+        "flight_control": [],
+        "dive_bomber": []
+      },
+      "modules_tree": {
+        "3349000176": {
+          "name": "Propulsion: 120,000 hp",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 1600000,
+          "next_ships": null,
+          "module_id": 3349000176,
+          "type": "Engine",
+          "module_id_str": "PAUE902"
+        },
+        "3349950448": {
+          "name": "Des Moines (A)",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 2900000,
+          "next_ships": null,
+          "module_id": 3349950448,
+          "type": "Hull",
+          "module_id_str": "PAUH901"
+        },
+        "3350179824": {
+          "name": "203 mm/55 Mk16",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 2000000,
+          "next_ships": null,
+          "module_id": 3350179824,
+          "type": "Artillery",
+          "module_id_str": "PAUA901"
+        },
+        "3349590000": {
+          "name": "Mk10 mod. 1",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 1800000,
+          "next_ships": null,
+          "module_id": 3349590000,
+          "type": "Suo",
+          "module_id_str": "PAUS901"
+        }
+      },
+      "nation": "usa",
+      "is_premium": false,
+      "ship_id": 4273911792,
+      "price_credit": 19800000,
+      "default_profile": {
+        "engine": {
+          "engine_id_str": "PAUE902",
+          "max_speed": 33.0,
+          "engine_id": 3349000176
+        },
+        "torpedo_bomber": null,
+        "anti_aircraft": {
+          "slots": {
+            "0": {
+              "distance": 0.1,
+              "avg_damage": 249,
+              "caliber": 76,
+              "name": "76.2 mm/50 Mk33",
+              "guns": 12
+            },
+            "1": {
+              "distance": 0.1,
+              "avg_damage": 43,
+              "caliber": 20,
+              "name": "20 mm Oerlikon Mk4",
+              "guns": 12
+            },
+            "2": {
+              "distance": 0.2,
+              "avg_damage": 90,
+              "caliber": 127,
+              "name": "127 mm/38 Mk32",
+              "guns": 6
+            }
+          },
+          "defense": 73
+        },
+        "mobility": {
+          "rudder_time": 8.6,
+          "total": 63,
+          "turning_radius": 770,
+          "max_speed": 33.0
+        },
+        "hull": {
+          "hull_id": 3349950448,
+          "hull_id_str": "PAUH901",
+          "torpedoes_barrels": 0,
+          "anti_aircraft_barrels": 30,
+          "range": { "max": 203, "min": 6 },
+          "health": 50600,
+          "planes_amount": 0,
+          "artillery_barrels": 3,
+          "atba_barrels": 6
+        },
+        "atbas": {
+          "distance": 6.0,
+          "slots": {
+            "0": {
+              "burn_probability": 5.0,
+              "bullet_speed": 792,
+              "name": "127 mm HE Mk32",
+              "shot_delay": 6.0,
+              "damage": 1800,
+              "bullet_mass": 25,
+              "type": "HE",
+              "gun_rate": 10.0
+            }
+          }
+        },
+        "artillery": {
+          "max_dispersion": 142,
+          "shells": {
+            "AP": {
+              "burn_probability": null,
+              "bullet_speed": 762,
+              "name": "203 mm AP Mk21",
+              "damage": 5000,
+              "bullet_mass": 152,
+              "type": "AP"
+            },
+            "HE": {
+              "burn_probability": 14.0,
+              "bullet_speed": 823,
+              "name": "203 mm HE/HC Mk25",
+              "damage": 2800,
+              "bullet_mass": 118,
+              "type": "HE"
+            }
+          },
+          "shot_delay": 5.0,
+          "rotation_time": 30.0,
+          "distance": 15.8,
+          "artillery_id": 3350179824,
+          "artillery_id_str": "PAUA901",
+          "slots": {
+            "0": { "barrels": 3, "name": "203 mm/55 Mk16", "guns": 3 }
+          },
+          "gun_rate": 10.9
+        },
+        "torpedoes": null,
+        "fighters": null,
+        "fire_control": {
+          "fire_control_id": 3349590000,
+          "distance": 15.8,
+          "distance_increase": 0,
+          "fire_control_id_str": "PAUS901"
+        },
+        "weaponry": {
+          "anti_aircraft": 73,
+          "aircraft": 0,
+          "artillery": 76,
+          "torpedoes": 0
+        },
+        "battle_level_range_max": 10,
+        "battle_level_range_min": 10,
+        "flight_control": null,
+        "concealment": {
+          "total": 48,
+          "detect_distance_by_plane": 7.9,
+          "detect_distance_by_ship": 13.9
+        },
+        "armour": {
+          "casemate": { "max": -1, "min": -1 },
+          "flood_prob": 7,
+          "deck": { "max": -1, "min": -1 },
+          "flood_damage": 25,
+          "range": { "max": 203, "min": 6 },
+          "health": 50600,
+          "extremities": { "max": -1, "min": -1 },
+          "total": 68,
+          "citadel": { "max": -1, "min": -1 }
+        },
+        "dive_bomber": null
+      },
+      "upgrades": [
+        4260548528,
+        4268937136,
+        4281520048,
+        4257402800,
+        4261597104,
+        4265791408,
+        4269985712,
+        4267888560,
+        4274180016,
+        4278374320,
+        4282568624,
+        4262645680,
+        4266839984,
+        4271034288,
+        4275228592,
+        4273131440,
+        4259499952,
+        4287811504,
+        4272082864,
+        4280471472
+      ],
+      "tier": 10,
+      "next_ships": {},
+      "mod_slots": 6,
+      "type": "Cruiser",
+      "is_special": false,
+      "name": "Des Moines"
+    },
+    "4179539760": {
+      "description": "The ship was developed from a series of German heavy cruisers. Unlike ships of preceding classes, she boasted an increased displacement and more powerful main battery guns.",
+      "price_gold": 0,
+      "ship_id_str": "PGSC110",
+      "has_demo_profile": false,
+      "images": {
+        "small": "https://glossary-wows-global.gcdn.co/icons//vehicle/small/PGSC110_4635332915d94f64dbdc1fda94f7f2f0bfd227355eab5406b16f5d2e81006c3d.png",
+        "large": "https://glossary-wows-global.gcdn.co/icons//vehicle/large/PGSC110_e0559ada95a0814aee79cb2f02456c432e2d32cd6a6995b398662064d3a64e78.png",
+        "medium": "https://glossary-wows-global.gcdn.co/icons//vehicle/medium/PGSC110_147816fee82d80f428c2394bfa63e8e346bbd9b7a43124ae0fb4e23bcb8b9748.png",
+        "contour": "https://glossary-wows-global.gcdn.co/icons//vehicle/contour/PGSC110_05f58e7c19a4d6bd8cd44f51ba7e24f67bf2126fad26227f578b044eea192f7b.png"
+      },
+      "modules": {
+        "engine": [3350048560],
+        "torpedo_bomber": [],
+        "fighter": [],
+        "hull": [3349950256],
+        "artillery": [3350179632],
+        "torpedoes": [3349557040],
+        "fire_control": [3349589808],
+        "flight_control": [],
+        "dive_bomber": []
+      },
+      "modules_tree": {
+        "3350048560": {
+          "name": "Propulsion: 155,000 hp",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 1400000,
+          "next_ships": null,
+          "module_id": 3350048560,
+          "type": "Engine",
+          "module_id_str": "PGUE901"
+        },
+        "3349950256": {
+          "name": "Hindenburg (A)",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 2200000,
+          "next_ships": null,
+          "module_id": 3349950256,
+          "type": "Hull",
+          "module_id_str": "PGUH901"
+        },
+        "3349557040": {
+          "name": "G7a T1",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 260000,
+          "next_ships": null,
+          "module_id": 3349557040,
+          "type": "Torpedoes",
+          "module_id_str": "PGUT901"
+        },
+        "3349589808": {
+          "name": "FKS Typ 10 Mod. 1",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 1700000,
+          "next_ships": null,
+          "module_id": 3349589808,
+          "type": "Suo",
+          "module_id_str": "PGUS901"
+        },
+        "3350179632": {
+          "name": "203 mm L/60 Drh LC/34",
+          "next_modules": null,
+          "is_default": true,
+          "price_xp": 0,
+          "price_credit": 1800000,
+          "next_ships": null,
+          "module_id": 3350179632,
+          "type": "Artillery",
+          "module_id_str": "PGUA901"
+        }
+      },
+      "nation": "germany",
+      "is_premium": false,
+      "ship_id": 4179539760,
+      "price_credit": 19600000,
+      "default_profile": {
+        "engine": {
+          "engine_id_str": "PGUE901",
+          "max_speed": 31.5,
+          "engine_id": 3350048560
+        },
+        "torpedo_bomber": null,
+        "anti_aircraft": {
+          "slots": {
+            "0": {
+              "distance": 0.1,
+              "avg_damage": 54,
+              "caliber": 20,
+              "name": "20 mm Flakvierling 38",
+              "guns": 9
+            },
+            "1": {
+              "distance": 0.1,
+              "avg_damage": 170,
+              "caliber": 55,
+              "name": "55 mm L/77 Gerät 58 Zwilling",
+              "guns": 7
+            },
+            "2": {
+              "distance": 0.1,
+              "avg_damage": 16,
+              "caliber": 20,
+              "name": "20 mm Flakzwilling 38",
+              "guns": 4
+            },
+            "3": {
+              "distance": 0.1,
+              "avg_damage": 34,
+              "caliber": 55,
+              "name": "55 mm L/77 Gerät 58",
+              "guns": 2
+            },
+            "4": {
+              "distance": 0.1,
+              "avg_damage": 132,
+              "caliber": 105,
+              "name": "105 mm L/65 Dop. L. C/31",
+              "guns": 8
+            }
+          },
+          "defense": 72
+        },
+        "mobility": {
+          "rudder_time": 12.1,
+          "total": 52,
+          "turning_radius": 800,
+          "max_speed": 31.5
+        },
+        "hull": {
+          "hull_id": 3349950256,
+          "hull_id_str": "PGUH901",
+          "torpedoes_barrels": 4,
+          "anti_aircraft_barrels": 30,
+          "range": { "max": 150, "min": 13 },
+          "health": 51900,
+          "planes_amount": 0,
+          "artillery_barrels": 4,
+          "atba_barrels": 8
+        },
+        "atbas": {
+          "distance": 6.0,
+          "slots": {
+            "0": {
+              "burn_probability": 5.0,
+              "bullet_speed": 900,
+              "name": "105 mm Spr.Gr. Kz.",
+              "shot_delay": 3.0,
+              "damage": 1200,
+              "bullet_mass": 15,
+              "type": "HE",
+              "gun_rate": 17.9
+            }
+          }
+        },
+        "artillery": {
+          "max_dispersion": 156,
+          "shells": {
+            "AP": {
+              "burn_probability": null,
+              "bullet_speed": 925,
+              "name": "203 mm P.Spr.Gr. L/4.4",
+              "damage": 5900,
+              "bullet_mass": 122,
+              "type": "AP"
+            },
+            "HE": {
+              "burn_probability": 13.0,
+              "bullet_speed": 925,
+              "name": "203 mm Spr.Gr. L/4.7 Kz.",
+              "damage": 2500,
+              "bullet_mass": 122,
+              "type": "HE"
+            }
+          },
+          "shot_delay": 11.0,
+          "rotation_time": 22.5,
+          "distance": 17.8,
+          "artillery_id": 3350179632,
+          "artillery_id_str": "PGUA901",
+          "slots": {
+            "0": { "barrels": 3, "name": "203 mm L/60 SK C/34", "guns": 4 }
+          },
+          "gun_rate": 5.5
+        },
+        "torpedoes": {
+          "visibility_dist": 1.3,
+          "distance": 6.0,
+          "torpedoes_id": 3349557040,
+          "torpedo_name": "G7a T1",
+          "reload_time": 90,
+          "torpedo_speed": 64,
+          "rotation_time": 7.2,
+          "torpedoes_id_str": "PGUT901",
+          "slots": {
+            "0": {
+              "barrels": 4,
+              "caliber": 533,
+              "name": "533 mm Vierling",
+              "guns": 4
+            }
+          },
+          "max_damage": 13700
+        },
+        "fighters": null,
+        "fire_control": {
+          "fire_control_id": 3349589808,
+          "distance": 17.8,
+          "distance_increase": 0,
+          "fire_control_id_str": "PGUS901"
+        },
+        "weaponry": {
+          "anti_aircraft": 72,
+          "aircraft": 0,
+          "artillery": 74,
+          "torpedoes": 32
+        },
+        "battle_level_range_max": 10,
+        "battle_level_range_min": 10,
+        "flight_control": null,
+        "concealment": {
+          "total": 37,
+          "detect_distance_by_plane": 8.5,
+          "detect_distance_by_ship": 16.0
+        },
+        "armour": {
+          "casemate": { "max": -1, "min": -1 },
+          "flood_prob": 13,
+          "deck": { "max": -1, "min": -1 },
+          "flood_damage": 25,
+          "range": { "max": 150, "min": 13 },
+          "health": 51900,
+          "extremities": { "max": -1, "min": -1 },
+          "total": 70,
+          "citadel": { "max": -1, "min": -1 }
+        },
+        "dive_bomber": null
+      },
+      "upgrades": [
+        4260548528,
+        4268937136,
+        4281520048,
+        4257402800,
+        4261597104,
+        4269985712,
+        4267888560,
+        4274180016,
+        4278374320,
+        4282568624,
+        4262645680,
+        4266839984,
+        4271034288,
+        4275228592,
+        4279422896,
+        4273131440,
+        4259499952,
+        4287811504,
+        4272082864,
+        4265791408,
+        4280471472
+      ],
+      "tier": 10,
+      "next_ships": {},
+      "mod_slots": 6,
+      "type": "Cruiser",
+      "is_special": false,
+      "name": "Hindenburg"
+    }
+  }
+}
