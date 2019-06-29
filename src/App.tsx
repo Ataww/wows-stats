@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Link, Route } from "react-router-dom";
+import "./App.css";
+import logo from "./logo.svg";
+import Profile from "./Profile";
+import Search from "./Search";
 
+// 501235211
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            Ranked stuffy stuff
+          </p>
+          <Link to="/" className="App-link">
+            Main
+          </Link>
+        </header>
+        <Route exact path="/" component={Search} />
+        <Route
+          path="/profile/:id"
+          render={({ match }) => <Profile id={match.params.id} />}
+        />
+        <Route
+          path="/profile/:id/stats/:season"
+          render={({ match }) => <div>Test</div>}
+        />
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;
