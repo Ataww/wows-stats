@@ -1,0 +1,146 @@
+{
+  "status": "ok",
+  "meta": { "count": 1, "hidden": null },
+  "data": {
+    "501235211": [
+      {
+        "seasons": {
+          "12": {
+            "rank_div3": null,
+            "rank_solo": {
+              "max_frags_battle": 1,
+              "draws": 0,
+              "max_xp": 2134,
+              "wins": 1,
+              "planes_killed": 0,
+              "losses": 0,
+              "torpedoes": {
+                "max_frags_battle": 0,
+                "frags": 0,
+                "hits": 0,
+                "shots": 0
+              },
+              "battles": 1,
+              "max_damage_dealt": 10168,
+              "damage_dealt": 10168,
+              "max_planes_killed": 0,
+              "aircraft": { "max_frags_battle": 0, "frags": 0 },
+              "ramming": { "max_frags_battle": 0, "frags": 0 },
+              "main_battery": {
+                "max_frags_battle": 1,
+                "frags": 1,
+                "hits": 21,
+                "shots": 42
+              },
+              "second_battery": {
+                "max_frags_battle": 0,
+                "frags": 0,
+                "hits": 0,
+                "shots": 4
+              },
+              "survived_wins": 0,
+              "frags": 1,
+              "xp": 2134,
+              "survived_battles": 0
+            },
+            "rank_div2": null
+          }
+        },
+        "account_id": 501235211,
+        "ship_id": 4179539408
+      },
+      {
+        "seasons": {
+          "12": {
+            "rank_div3": null,
+            "rank_solo": {
+              "max_frags_battle": 3,
+              "draws": 0,
+              "max_xp": 3901,
+              "wins": 9,
+              "planes_killed": 36,
+              "losses": 3,
+              "torpedoes": {
+                "max_frags_battle": 0,
+                "frags": 0,
+                "hits": 0,
+                "shots": 0
+              },
+              "battles": 12,
+              "max_damage_dealt": 124102,
+              "damage_dealt": 841446,
+              "max_planes_killed": 31,
+              "aircraft": { "max_frags_battle": 0, "frags": 0 },
+              "ramming": { "max_frags_battle": 0, "frags": 0 },
+              "main_battery": {
+                "max_frags_battle": 3,
+                "frags": 10,
+                "hits": 1036,
+                "shots": 2244
+              },
+              "second_battery": {
+                "max_frags_battle": 1,
+                "frags": 1,
+                "hits": 89,
+                "shots": 352
+              },
+              "survived_wins": 6,
+              "frags": 15,
+              "xp": 28107,
+              "survived_battles": 6
+            },
+            "rank_div2": null
+          }
+        },
+        "account_id": 501235211,
+        "ship_id": 4273911792
+      },
+      {
+        "seasons": {
+          "12": {
+            "rank_div3": null,
+            "rank_solo": {
+              "max_frags_battle": 4,
+              "draws": 0,
+              "max_xp": 4319,
+              "wins": 1,
+              "planes_killed": 0,
+              "losses": 0,
+              "torpedoes": {
+                "max_frags_battle": 0,
+                "frags": 0,
+                "hits": 0,
+                "shots": 0
+              },
+              "battles": 1,
+              "max_damage_dealt": 129823,
+              "damage_dealt": 129823,
+              "max_planes_killed": 0,
+              "aircraft": { "max_frags_battle": 0, "frags": 0 },
+              "ramming": { "max_frags_battle": 0, "frags": 0 },
+              "main_battery": {
+                "max_frags_battle": 3,
+                "frags": 3,
+                "hits": 155,
+                "shots": 306
+              },
+              "second_battery": {
+                "max_frags_battle": 0,
+                "frags": 0,
+                "hits": 3,
+                "shots": 112
+              },
+              "survived_wins": 1,
+              "frags": 4,
+              "xp": 4319,
+              "survived_battles": 1
+            },
+            "rank_div2": null
+          }
+        },
+        "account_id": 501235211,
+        "ship_id": 4179539760
+      }
+    ]
+  }
+}

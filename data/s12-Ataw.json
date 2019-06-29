@@ -1,0 +1,58 @@
+{
+  "status": "ok",
+  "meta": { "count": 1, "hidden": null },
+  "data": {
+    "501235211": {
+      "seasons": {
+        "12": {
+          "rank_info": {
+            "max_rank": 10,
+            "start_rank": 18,
+            "stars": 3,
+            "rank": 10,
+            "stage": 2
+          },
+          "rank_div3": null,
+          "rank_solo": {
+            "max_frags_battle": 4,
+            "draws": 0,
+            "max_xp": 4319,
+            "wins": 11,
+            "planes_killed": 36,
+            "losses": 3,
+            "torpedoes": {
+              "max_frags_battle": 0,
+              "frags": 0,
+              "hits": 0,
+              "shots": 0
+            },
+            "battles": 14,
+            "max_damage_dealt": 129823,
+            "damage_dealt": 981437,
+            "max_planes_killed": 31,
+            "aircraft": { "max_frags_battle": 0, "frags": 0 },
+            "ramming": { "max_frags_battle": 0, "frags": 0 },
+            "main_battery": {
+              "max_frags_battle": 3,
+              "frags": 14,
+              "hits": 1212,
+              "shots": 2592
+            },
+            "second_battery": {
+              "max_frags_battle": 1,
+              "frags": 1,
+              "hits": 92,
+              "shots": 468
+            },
+            "survived_wins": 7,
+            "frags": 20,
+            "xp": 34560,
+            "survived_battles": 7
+          },
+          "rank_div2": null
+        }
+      },
+      "account_id": 501235211
+    }
+  }
+}
