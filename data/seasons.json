@@ -1,0 +1,1542 @@
+{
+  "status": "ok",
+  "meta": { "count": 18 },
+  "data": {
+    "1": {
+      "account_tier": 9,
+      "max_ship_tier": 7,
+      "start_at": 1442473200,
+      "season_name": "Pilot Season",
+      "finish_at": 1446075000,
+      "season_id": 1,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "19": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_19_02f2e42fbf0b48a95852c417928fb9e3c710f87efaa1165ad07813bf2ec7e267.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "20": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_20_aca3e5c9f0660efd30ac14c410a8d7f312c4e0e4f48392ee236fc1d778fb8c16.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "21": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_21_7b492ffa25f919dae145e544f157f788afc44211a38e4fc85b20a6294e34ba18.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "22": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_22_4bc00c394334d906371345374f67818978796b23018a4a09ab4c7291e1580b8c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "23": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_23_7ac7ab950d04a2767895a5583a5887ae2efb2d3a5b98ca279e24bcef759f50ab.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "24": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_24_db2c526906c3f744ca898b08b260678ace18dd77ab0205808f8581b4b1805230.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "25": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_25_346b246067580ab6f18f0f19c5f1254edef2740612405faab40c337601b4ff65.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 6,
+      "parent_season_id": 0,
+      "start_rank": 25,
+      "close_at": 1446076860
+    },
+    "2": {
+      "account_tier": 11,
+      "max_ship_tier": 8,
+      "start_at": 1447999200,
+      "season_name": "The Second Season",
+      "finish_at": 1450848600,
+      "season_id": 2,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 5,
+      "parent_season_id": 1,
+      "start_rank": 18,
+      "close_at": 1450850400
+    },
+    "3": {
+      "account_tier": 11,
+      "max_ship_tier": 8,
+      "start_at": 1452060000,
+      "season_name": "The Third Season",
+      "finish_at": 1455687000,
+      "season_id": 3,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "19": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_19_02f2e42fbf0b48a95852c417928fb9e3c710f87efaa1165ad07813bf2ec7e267.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "20": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_20_aca3e5c9f0660efd30ac14c410a8d7f312c4e0e4f48392ee236fc1d778fb8c16.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "21": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_21_7b492ffa25f919dae145e544f157f788afc44211a38e4fc85b20a6294e34ba18.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "22": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_22_4bc00c394334d906371345374f67818978796b23018a4a09ab4c7291e1580b8c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 5,
+      "parent_season_id": 2,
+      "start_rank": 22,
+      "close_at": 1455688800
+    },
+    "4": {
+      "account_tier": 11,
+      "max_ship_tier": 10,
+      "start_at": 1465538400,
+      "season_name": "The Fourth Season",
+      "finish_at": 1469424600,
+      "season_id": 4,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "19": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_19_02f2e42fbf0b48a95852c417928fb9e3c710f87efaa1165ad07813bf2ec7e267.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "20": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_20_aca3e5c9f0660efd30ac14c410a8d7f312c4e0e4f48392ee236fc1d778fb8c16.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "21": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_21_7b492ffa25f919dae145e544f157f788afc44211a38e4fc85b20a6294e34ba18.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "22": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_22_4bc00c394334d906371345374f67818978796b23018a4a09ab4c7291e1580b8c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 5,
+      "parent_season_id": 3,
+      "start_rank": 22,
+      "close_at": 1469426400
+    },
+    "5": {
+      "account_tier": 11,
+      "max_ship_tier": 10,
+      "start_at": 1475301600,
+      "season_name": "The Fifth Season",
+      "finish_at": 1479101400,
+      "season_id": 5,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "19": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_19_02f2e42fbf0b48a95852c417928fb9e3c710f87efaa1165ad07813bf2ec7e267.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "20": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_20_aca3e5c9f0660efd30ac14c410a8d7f312c4e0e4f48392ee236fc1d778fb8c16.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "21": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_21_7b492ffa25f919dae145e544f157f788afc44211a38e4fc85b20a6294e34ba18.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "22": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_22_4bc00c394334d906371345374f67818978796b23018a4a09ab4c7291e1580b8c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "23": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_23_7ac7ab950d04a2767895a5583a5887ae2efb2d3a5b98ca279e24bcef759f50ab.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 6,
+      "parent_season_id": 4,
+      "start_rank": 23,
+      "close_at": 1479103200
+    },
+    "6": {
+      "account_tier": 11,
+      "max_ship_tier": 7,
+      "start_at": 1486706400,
+      "season_name": "The Sixth Season",
+      "finish_at": 1490333400,
+      "season_id": 6,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "19": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_19_02f2e42fbf0b48a95852c417928fb9e3c710f87efaa1165ad07813bf2ec7e267.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "20": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_20_aca3e5c9f0660efd30ac14c410a8d7f312c4e0e4f48392ee236fc1d778fb8c16.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "21": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_21_7b492ffa25f919dae145e544f157f788afc44211a38e4fc85b20a6294e34ba18.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "22": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_22_4bc00c394334d906371345374f67818978796b23018a4a09ab4c7291e1580b8c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "23": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_23_7ac7ab950d04a2767895a5583a5887ae2efb2d3a5b98ca279e24bcef759f50ab.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 5,
+      "parent_season_id": 5,
+      "start_rank": 23,
+      "close_at": 1490335200
+    },
+    "7": {
+      "account_tier": 11,
+      "max_ship_tier": 8,
+      "start_at": 1498802400,
+      "season_name": "The Seventh Season",
+      "finish_at": 1502083800,
+      "season_id": 7,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "19": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_19_02f2e42fbf0b48a95852c417928fb9e3c710f87efaa1165ad07813bf2ec7e267.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "20": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_20_aca3e5c9f0660efd30ac14c410a8d7f312c4e0e4f48392ee236fc1d778fb8c16.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "21": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_21_7b492ffa25f919dae145e544f157f788afc44211a38e4fc85b20a6294e34ba18.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "22": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_22_4bc00c394334d906371345374f67818978796b23018a4a09ab4c7291e1580b8c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "23": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_23_7ac7ab950d04a2767895a5583a5887ae2efb2d3a5b98ca279e24bcef759f50ab.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 6,
+      "parent_season_id": 6,
+      "start_rank": 23,
+      "close_at": 1502085600
+    },
+    "8": {
+      "account_tier": 11,
+      "max_ship_tier": 10,
+      "start_at": 1513922400,
+      "season_name": "The Eighth Season",
+      "finish_at": 1517203800,
+      "season_id": 8,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "19": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_19_02f2e42fbf0b48a95852c417928fb9e3c710f87efaa1165ad07813bf2ec7e267.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "20": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_20_aca3e5c9f0660efd30ac14c410a8d7f312c4e0e4f48392ee236fc1d778fb8c16.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "21": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_21_7b492ffa25f919dae145e544f157f788afc44211a38e4fc85b20a6294e34ba18.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "22": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_22_4bc00c394334d906371345374f67818978796b23018a4a09ab4c7291e1580b8c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "23": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_23_7ac7ab950d04a2767895a5583a5887ae2efb2d3a5b98ca279e24bcef759f50ab.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 8,
+      "parent_season_id": 7,
+      "start_rank": 23,
+      "close_at": 1517205600
+    },
+    "9": {
+      "account_tier": 11,
+      "max_ship_tier": 10,
+      "start_at": 1524808800,
+      "season_name": "The Ninth Season",
+      "finish_at": 1528090200,
+      "season_id": 9,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "19": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_19_02f2e42fbf0b48a95852c417928fb9e3c710f87efaa1165ad07813bf2ec7e267.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "20": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_20_aca3e5c9f0660efd30ac14c410a8d7f312c4e0e4f48392ee236fc1d778fb8c16.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "21": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_21_7b492ffa25f919dae145e544f157f788afc44211a38e4fc85b20a6294e34ba18.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "22": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_22_4bc00c394334d906371345374f67818978796b23018a4a09ab4c7291e1580b8c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "23": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_23_7ac7ab950d04a2767895a5583a5887ae2efb2d3a5b98ca279e24bcef759f50ab.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 7,
+      "parent_season_id": 8,
+      "start_rank": 23,
+      "close_at": 1528092000
+    },
+    "10": {
+      "account_tier": 11,
+      "max_ship_tier": 10,
+      "start_at": 1535090400,
+      "season_name": "The Tenth Season",
+      "finish_at": 1538976600,
+      "season_id": 10,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "19": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_19_02f2e42fbf0b48a95852c417928fb9e3c710f87efaa1165ad07813bf2ec7e267.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "20": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_20_aca3e5c9f0660efd30ac14c410a8d7f312c4e0e4f48392ee236fc1d778fb8c16.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "21": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_21_7b492ffa25f919dae145e544f157f788afc44211a38e4fc85b20a6294e34ba18.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "22": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_22_4bc00c394334d906371345374f67818978796b23018a4a09ab4c7291e1580b8c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "23": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_23_7ac7ab950d04a2767895a5583a5887ae2efb2d3a5b98ca279e24bcef759f50ab.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 5,
+      "parent_season_id": 9,
+      "start_rank": 23,
+      "close_at": 1538978400
+    },
+    "11": {
+      "account_tier": 11,
+      "max_ship_tier": 9,
+      "start_at": 1548914400,
+      "season_name": "The Eleventh Season",
+      "finish_at": 1551159000,
+      "season_id": 11,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 9,
+      "parent_season_id": 10,
+      "start_rank": 18,
+      "close_at": 1551160800
+    },
+    "12": {
+      "account_tier": 11,
+      "max_ship_tier": 10,
+      "start_at": 1559196000,
+      "season_name": "The Twelfth Season",
+      "finish_at": 1561440600,
+      "season_id": 12,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_1_3ac290ccfa31ed6f4d68fc1e8b3f98601ba3592449851e745312f60a11210ef4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_2_e1140ccb6d1a891dc38e7a68196338639cf1755ecde4749f19e4c3bfa7a8d50e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_3_d6368b70c45a218e08e78bc6f8ae38ff1c3ed245c7fda0a96ae7e23c52edb1a4.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_4_4bbf86a0cf8fbd412fa54b02891adb5104a0bdba24268228922d944f092b0729.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_5_0cec0d43da0c3fecaeb6bed4d199b9ca82f328fb66c6b4c3dab68539178d0d9d.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_6_b642263ce49d32153a674da1b5daef35d41038b1de61ae70ed7152c851b5dc1c.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_7_7cee616d383a147240707cf346bb540af774f5e7e1a5914069175cc155bc6f6f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_8_65a3e343331527772ec901b489719f7a03dd2651db08bb1e02a9f324490e1cb0.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_9_8e233b45278e3cd331b98514b6553915c9b5d406b4b6ca2c534cb500da5b609e.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_10_3207a8000efa96760fef2cbb72d2e80e1db043bc2c3cfd74260e31b939207182.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "11": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_11_e8cce8212b60c69558eb128fe9c9b2a17a43776563ba656560ea23d95e19b10a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "12": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_12_488f19b1825230095263e17971d75626ec6c34753166e73b122e2d764d925bbe.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "13": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_13_f6c7374412a20d2e3a6e15376080339dfea83ff5a55e40b423d6564fee86bfc7.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "14": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_14_918899b6f4c7533994ae046f84cde4252e3ba007afb5fea56e5760c764bd7764.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "15": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_15_a2934406ce24e2a3458aa073db866d9a37bda716b49500b2289b571bc7bf0d8f.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "16": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_16_86a71e4687351f9fc1b59b864d5188182f832f6a570e88c8f1ec31b24935671b.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "17": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_17_405a7823d95c63ba11e61ca6f3e0a3dd494a2ef1ef6048e68877c366ef4c39f6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "18": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/senior_season/icon_rank_big_18_5c299bb0ba3947eb2fe81a8d9500b81f2ffc17ae53cb6ab9921226e0f3acd70a.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 10,
+      "parent_season_id": 11,
+      "start_rank": 18,
+      "close_at": 1561442400
+    },
+    "104": {
+      "account_tier": 14,
+      "max_ship_tier": 6,
+      "start_at": 1546408800,
+      "season_name": "Sprint 4",
+      "finish_at": 1547443800,
+      "season_id": 104,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_1_ddb055dd00d43490b1819606a0f06313bd1a05e065c83a4dfc964191e70d8347.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_2_449d8069bd55ef7c9f1010e183cee720d596275e11f82c87b34b47885ced0970.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_3_99369aa5f57c9f30b8e7eca3a11a04ae3ae88a798525976dad62a6928f8b6d02.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_4_d0939abf16c968c76e2f56ac2af14c0257914154022832bd332a1820d9cc74ff.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_5_1824c424ca06755a9d16ff42f51266b81831cae5faf4b3723c5fe7a91f9b4291.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_6_cc89e7647ed0a0bf6050629fd08a9a4887152b8bf89612b90f41361c9c8148e3.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_7_1431e11972249b9d651e80a859609ecd36315f28f309dfed3cd2ec558dd0ce89.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_8_4522d988d955d4c593f7dcf3d2e060c39ae719d02a5c584daee402d89cd7eafc.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_9_e56d88f6505184ab502fb66ee1da4c392724ab1f3fc1cd5da46b7d617251f044.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_10_20de46c53a06cad1eb132cce5895c11b13d0ee7b86f0d57d8995e03741549ae6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 6,
+      "parent_season_id": 0,
+      "start_rank": 10,
+      "close_at": 1547445600
+    },
+    "106": {
+      "account_tier": 14,
+      "max_ship_tier": 7,
+      "start_at": 1562824800,
+      "season_name": "Sprint 6",
+      "finish_at": 1563859800,
+      "season_id": 106,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_1_ddb055dd00d43490b1819606a0f06313bd1a05e065c83a4dfc964191e70d8347.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_2_449d8069bd55ef7c9f1010e183cee720d596275e11f82c87b34b47885ced0970.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_3_99369aa5f57c9f30b8e7eca3a11a04ae3ae88a798525976dad62a6928f8b6d02.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_4_d0939abf16c968c76e2f56ac2af14c0257914154022832bd332a1820d9cc74ff.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_5_1824c424ca06755a9d16ff42f51266b81831cae5faf4b3723c5fe7a91f9b4291.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_6_cc89e7647ed0a0bf6050629fd08a9a4887152b8bf89612b90f41361c9c8148e3.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_7_1431e11972249b9d651e80a859609ecd36315f28f309dfed3cd2ec558dd0ce89.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_8_4522d988d955d4c593f7dcf3d2e060c39ae719d02a5c584daee402d89cd7eafc.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_9_e56d88f6505184ab502fb66ee1da4c392724ab1f3fc1cd5da46b7d617251f044.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_10_20de46c53a06cad1eb132cce5895c11b13d0ee7b86f0d57d8995e03741549ae6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 7,
+      "parent_season_id": 0,
+      "start_rank": 10,
+      "close_at": 1563861600
+    },
+    "105": {
+      "account_tier": 14,
+      "max_ship_tier": 7,
+      "start_at": 1561615200,
+      "season_name": "Sprint 5",
+      "finish_at": 1562650200,
+      "season_id": 105,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_1_ddb055dd00d43490b1819606a0f06313bd1a05e065c83a4dfc964191e70d8347.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_2_449d8069bd55ef7c9f1010e183cee720d596275e11f82c87b34b47885ced0970.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_3_99369aa5f57c9f30b8e7eca3a11a04ae3ae88a798525976dad62a6928f8b6d02.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_4_d0939abf16c968c76e2f56ac2af14c0257914154022832bd332a1820d9cc74ff.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_5_1824c424ca06755a9d16ff42f51266b81831cae5faf4b3723c5fe7a91f9b4291.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_6_cc89e7647ed0a0bf6050629fd08a9a4887152b8bf89612b90f41361c9c8148e3.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_7_1431e11972249b9d651e80a859609ecd36315f28f309dfed3cd2ec558dd0ce89.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_8_4522d988d955d4c593f7dcf3d2e060c39ae719d02a5c584daee402d89cd7eafc.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_9_e56d88f6505184ab502fb66ee1da4c392724ab1f3fc1cd5da46b7d617251f044.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_10_20de46c53a06cad1eb132cce5895c11b13d0ee7b86f0d57d8995e03741549ae6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 7,
+      "parent_season_id": 0,
+      "start_rank": 10,
+      "close_at": 1562652000
+    },
+    "103": {
+      "account_tier": 14,
+      "max_ship_tier": 6,
+      "start_at": 1545285600,
+      "season_name": "Sprint 3",
+      "finish_at": 1546318800,
+      "season_id": 103,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_1_ddb055dd00d43490b1819606a0f06313bd1a05e065c83a4dfc964191e70d8347.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_2_449d8069bd55ef7c9f1010e183cee720d596275e11f82c87b34b47885ced0970.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_3_99369aa5f57c9f30b8e7eca3a11a04ae3ae88a798525976dad62a6928f8b6d02.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_4_d0939abf16c968c76e2f56ac2af14c0257914154022832bd332a1820d9cc74ff.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_5_1824c424ca06755a9d16ff42f51266b81831cae5faf4b3723c5fe7a91f9b4291.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_6_cc89e7647ed0a0bf6050629fd08a9a4887152b8bf89612b90f41361c9c8148e3.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_7_1431e11972249b9d651e80a859609ecd36315f28f309dfed3cd2ec558dd0ce89.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_8_4522d988d955d4c593f7dcf3d2e060c39ae719d02a5c584daee402d89cd7eafc.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_9_e56d88f6505184ab502fb66ee1da4c392724ab1f3fc1cd5da46b7d617251f044.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_10_20de46c53a06cad1eb132cce5895c11b13d0ee7b86f0d57d8995e03741549ae6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 6,
+      "parent_season_id": 0,
+      "start_rank": 10,
+      "close_at": 1546320600
+    },
+    "102": {
+      "account_tier": 14,
+      "max_ship_tier": 5,
+      "start_at": 1541048400,
+      "season_name": "Sprint 2",
+      "finish_at": 1542083400,
+      "season_id": 102,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_1_ddb055dd00d43490b1819606a0f06313bd1a05e065c83a4dfc964191e70d8347.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_2_449d8069bd55ef7c9f1010e183cee720d596275e11f82c87b34b47885ced0970.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_3_99369aa5f57c9f30b8e7eca3a11a04ae3ae88a798525976dad62a6928f8b6d02.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_4_d0939abf16c968c76e2f56ac2af14c0257914154022832bd332a1820d9cc74ff.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_5_1824c424ca06755a9d16ff42f51266b81831cae5faf4b3723c5fe7a91f9b4291.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_6_cc89e7647ed0a0bf6050629fd08a9a4887152b8bf89612b90f41361c9c8148e3.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_7_1431e11972249b9d651e80a859609ecd36315f28f309dfed3cd2ec558dd0ce89.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_8_4522d988d955d4c593f7dcf3d2e060c39ae719d02a5c584daee402d89cd7eafc.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_9_e56d88f6505184ab502fb66ee1da4c392724ab1f3fc1cd5da46b7d617251f044.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_10_20de46c53a06cad1eb132cce5895c11b13d0ee7b86f0d57d8995e03741549ae6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 5,
+      "parent_season_id": 0,
+      "start_rank": 10,
+      "close_at": 1542085200
+    },
+    "101": {
+      "account_tier": 14,
+      "max_ship_tier": 5,
+      "start_at": 1539928800,
+      "season_name": "Sprint 1",
+      "finish_at": 1540963800,
+      "season_id": 101,
+      "images": {
+        "1": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_1_ddb055dd00d43490b1819606a0f06313bd1a05e065c83a4dfc964191e70d8347.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_1_9da00ac30dee6bb580c94f566a28a96c537bb6d357be4f535dac56f57857ea1b.png"
+        },
+        "2": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_2_449d8069bd55ef7c9f1010e183cee720d596275e11f82c87b34b47885ced0970.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "3": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_3_99369aa5f57c9f30b8e7eca3a11a04ae3ae88a798525976dad62a6928f8b6d02.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_2_c84294bec8b196fbecc1db5f1a7f7abf3309124b542c8ffde4243ddcd41c30eb.png"
+        },
+        "4": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_4_d0939abf16c968c76e2f56ac2af14c0257914154022832bd332a1820d9cc74ff.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "5": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_5_1824c424ca06755a9d16ff42f51266b81831cae5faf4b3723c5fe7a91f9b4291.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "6": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_6_cc89e7647ed0a0bf6050629fd08a9a4887152b8bf89612b90f41361c9c8148e3.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_3_ac413e8da323dccd58ea879738d7f320cc7c13426b26af4689bd1b4092182c04.png"
+        },
+        "7": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_7_1431e11972249b9d651e80a859609ecd36315f28f309dfed3cd2ec558dd0ce89.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "8": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_8_4522d988d955d4c593f7dcf3d2e060c39ae719d02a5c584daee402d89cd7eafc.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "9": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_9_e56d88f6505184ab502fb66ee1da4c392724ab1f3fc1cd5da46b7d617251f044.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        },
+        "10": {
+          "insignia": "https://glossary-wows-global.gcdn.co/icons//rank_battles/insignias/junior_season/icon_rank_big_10_20de46c53a06cad1eb132cce5895c11b13d0ee7b86f0d57d8995e03741549ae6.png",
+          "background": "https://glossary-wows-global.gcdn.co/icons//rank_battles/bg/icon_rank_4_1a84704d212ef35f6882071f4e5ff68cc85d471c18bcbb9cc9a8af80fba38c05.png"
+        }
+      },
+      "min_ship_tier": 5,
+      "parent_season_id": 0,
+      "start_rank": 10,
+      "close_at": 1540965600
+    }
+  }
+}

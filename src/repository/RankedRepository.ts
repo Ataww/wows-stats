@@ -6,6 +6,7 @@ import { PlayerShipRankedStats } from "../domain/ShipStats";
 import ShipType from "../domain/ShipType";
 import { EitherApiResponse, EuClient } from "./ApiClient";
 import { formatOptions } from "./util";
+import { RankedSeason } from "../domain/RankedSeason";
 
 export interface PlayerRankedSearchOptions {
   fields?: string[];
@@ -54,6 +55,26 @@ export async function getRankedShipsStats(
     axiosOptions
   );
   return response.catchMap(_ => Left("Ranked ship stats fetch failed"));
+}
+
+interface SeasonOptions {
+  season_id?: number[];
+  fields?: Array<keyof RankedSeason>;
+  language?: string;
+}
+
+export async function getSeasons(
+  options?: SeasonOptions,
+  axiosOptions?: AxiosRequestConfig
+) {
+  const response: EitherApiResponse<
+    IdIndexedData<RankedSeason>
+  > = await EuClient.queryApi(
+    "wows/seasons/info",
+    formatOptions(options),
+    axiosOptions
+  );
+  return response.catchMap(_ => Left("Ranked seasons fetch failed"));
 }
 
 export function getRankedClassStats(

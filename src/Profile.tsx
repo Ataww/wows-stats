@@ -2,12 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Loading } from "./components";
 import { getPlayerProfile } from "./repository/PlayerRepository";
+import { RankedSeason } from "./domain/RankedSeason";
+import { getSeasons } from "./repository/RankedRepository";
+import "./Profile.scss";
 
 export default ({ id }: { id: number }) => {
   const [user, setUser] = useState<any>(undefined);
   const [isLoaded, setLoaded] = useState(false);
   const [delay, setDelay] = useState(false);
   const [error, setError] = useState<string>();
+  const [seasons, setSeasons] = useState<RankedSeason[]>([]);
 
   useEffect(() => {
     const timeout = setTimeout(() => setDelay(true), 300);
@@ -26,6 +30,11 @@ export default ({ id }: { id: number }) => {
       );
     });
   }, [id]);
+  useEffect(() => {
+    getSeasons({ season_id: [11, 12] }).then(response =>
+      response.cata(setError, val => setSeasons(Object.values(val.data)))
+    );
+  }, []);
 
   if (!(isLoaded && delay)) {
     return <Loading />;
@@ -43,13 +52,14 @@ export default ({ id }: { id: number }) => {
       <h1>{user.nickname}</h1>
       <p>{user.account_id}</p>
       <p>{user.hidden_profile ? "Hidden profile" : "Public profile"}</p>
-      <div>
-        <p>
-          <Link to={`/profile/${id}/season/12`}>Season 12</Link>
-        </p>
-        <p>
-          <Link to={`/profile/${id}/season/11`}>Season 11</Link>
-        </p>
+      <div className="seasons-grid">
+        {seasons.map(s => (
+          <div key={s.season_id}>
+            <Link to={`/profile/${id}/season/${s.season_id}`}>
+              {s.season_name}
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );

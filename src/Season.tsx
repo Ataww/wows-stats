@@ -94,6 +94,10 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
       <div className="season-stats">
         <h3>Season {seasonId}</h3>
         <p>
+          <strong>Rank:</strong>{" "}
+          {stats && stats.seasons[seasonId].rank_info.rank}
+        </p>
+        <p>
           <strong>Battles</strong>:{" "}
           {stats && stats.seasons[seasonId].rank_solo!.battles}
         </p>

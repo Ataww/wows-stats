@@ -11,9 +11,12 @@ type UrlPrefix = "&" | "?";
  * @param prefix The prefix to add to the option string. Defaults to &. Valid options are & or ?
  */
 export function formatOptions(
-  options: { [key: string]: any },
+  options?: { [key: string]: any },
   prefix: UrlPrefix = "&"
 ) {
+  if (!options) {
+    return "";
+  }
   const fields: string[] = [];
   for (const field in options) {
     const data = isArray(options[field])
