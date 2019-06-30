@@ -1,8 +1,9 @@
-import Axios, { AxiosRequestConfig } from "axios";
+import { AxiosRequestConfig } from "axios";
 import { ApiResponse, IdIndexedData } from "../domain/ApiResponse";
 import { RankedStats } from "../domain/PlayerStats";
 import { PlayerShipRankedStats } from "../domain/ShipStats";
 import ShipType from "../domain/ShipType";
+import { EuClient, isErrorReponse } from "./ApiClient";
 import { formatOptions } from "./util";
 
 export interface PlayerRankedSearchOptions {
@@ -21,16 +22,15 @@ export async function getRankedStats(
   options: Omit<PlayerRankedSearchOptions, "season_id" | "account_id"> = {},
   axiosOptions?: AxiosRequestConfig
 ): Promise<ApiResponse<IdIndexedData<RankedStats>>> {
-  const response = await Axios.get(
-    `https://api.worldofwarships.eu/wows/seasons/accountinfo/?application_id=${
-      process.env.REACT_APP_WG_APP_ID
-    }&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
+  const response = await EuClient.queryApi(
+    "wows/seasons/accountinfo",
+    `&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
     axiosOptions
   );
-  if (response.status !== 200) {
+  if (isErrorReponse(response)) {
     throw new Error("Ranked stats fetch failed");
   }
-  return response.data;
+  return response as ApiResponse<IdIndexedData<RankedStats>>;
 }
 
 export async function getRankedShipsStats(
@@ -39,16 +39,15 @@ export async function getRankedShipsStats(
   options: Omit<ShipRankedSearchOptions, "season_id" | "account_id"> = {},
   axiosOptions?: AxiosRequestConfig
 ): Promise<ApiResponse<PlayerShipRankedStats>> {
-  const response = await Axios.get(
-    `https://api.worldofwarships.eu/wows/seasons/shipstats/?application_id=${
-      process.env.REACT_APP_WG_APP_ID
-    }&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
+  const response = await EuClient.queryApi(
+    "wows/seasons/shipstats",
+    `&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
     axiosOptions
   );
-  if (response.status !== 200) {
+  if (isErrorReponse(response)) {
     throw new Error("Ranked ship stats fetch failed");
   }
-  return response.data;
+  return response as ApiResponse<PlayerShipRankedStats>;
 }
 
 export function getRankedClassStats(

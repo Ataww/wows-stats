@@ -1,27 +1,42 @@
-import axios, { AxiosRequestConfig } from "axios";
-import { ApiResponse, IdIndexedData } from "../domain/ApiResponse";
+import { AxiosRequestConfig } from "axios";
+import { ApiResponse, BaseApiResponse, IdIndexedData } from "../domain/ApiResponse";
 import PlayerAccount from "../domain/PlayerAccount";
+import { EuClient, isErrorReponse } from "./ApiClient";
 
 export async function getPlayerProfile(
-  id: number
-): Promise<ApiResponse<{ [id: number]: PlayerAccount }>> {
-  const response = await axios.get(
-    `https://api.worldofwarships.eu/wows/account/info/?application_id=${
-      process.env.REACT_APP_WG_APP_ID
-    }&account_id=${id}`
+  id: number,
+  axiosOptions?: AxiosRequestConfig
+): Promise<ApiResponse<IdIndexedData<PlayerAccount>>> {
+  const response = await EuClient.queryApi(
+    "wows/account/info",
+    `&account_id=${id}`,
+    axiosOptions
   );
-  return response.data;
+  if (isErrorReponse(response)) {
+    throw new Error(
+      `No player found: ${response.error.message} - ${response.error.field}:${
+        response.error.value
+      }`
+    );
+  }
+  return response as ApiResponse<IdIndexedData<PlayerAccount>>;
 }
 
 export async function findPlayer(
   name: string,
   axiosOptions?: AxiosRequestConfig
 ): Promise<ApiResponse<IdIndexedData<PlayerAccount>>> {
-  const response = await axios.get(
-    `https://api.worldofwarships.eu/wows/account/list/?application_id=${
-      process.env.REACT_APP_WG_APP_ID
-    }&search=${name}&type=exact`,
+  const response: BaseApiResponse = await EuClient.queryApi(
+    "wows/account/list",
+    `&search=${name}&type=exact`,
     axiosOptions
   );
-  return response.data;
+  if (isErrorReponse(response)) {
+    throw new Error(
+      `Invalid player search query: ${response.error.message} - ${
+        response.error.field
+      }:${response.error.value}`
+    );
+  }
+  return response as ApiResponse<IdIndexedData<PlayerAccount>>;
 }

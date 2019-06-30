@@ -10,6 +10,7 @@ import {
 import { getShips } from "./repository/ShipRepository";
 import { IdIndexedData } from "./domain/ApiResponse";
 import { Loading } from "./components";
+import { Link } from "react-router-dom";
 
 export default ({ id, seasonId }: { id: number; seasonId: number }) => {
   const [stats, setStats] = useState<RankedStats>();
@@ -85,6 +86,9 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
       <div>
         <h3>Error</h3>
         <p>{error}</p>
+        <p>
+          <Link to={`/profile/${id}`}>Back</Link>
+        </p>
       </div>
     );
   } else if (!(delay && isLoaded)) {

@@ -6,8 +6,22 @@ export interface ResponseMetadata {
   page?: number;
 }
 
-export interface ApiResponse<T = any> {
+export interface ErrorData {
+  field: string;
+  message: string;
+  code: number;
+  value: string;
+}
+
+export interface BaseApiResponse {
   status: string;
+}
+
+export interface ErrorApiResponse extends BaseApiResponse {
+  error: ErrorData;
+}
+
+export interface ApiResponse<T = any> extends BaseApiResponse {
   metadata: ResponseMetadata;
   data: T;
 }
