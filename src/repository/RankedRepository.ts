@@ -1,9 +1,10 @@
 import { AxiosRequestConfig } from "axios";
+import { Either, Left, Right } from "monet";
 import { ApiResponse, IdIndexedData } from "../domain/ApiResponse";
 import { RankedStats } from "../domain/PlayerStats";
 import { PlayerShipRankedStats } from "../domain/ShipStats";
 import ShipType from "../domain/ShipType";
-import { EuClient, isErrorReponse } from "./ApiClient";
+import { EitherApiResponse, EuClient } from "./ApiClient";
 import { formatOptions } from "./util";
 
 export interface PlayerRankedSearchOptions {
@@ -21,16 +22,22 @@ export async function getRankedStats(
   seasonId: number,
   options: Omit<PlayerRankedSearchOptions, "season_id" | "account_id"> = {},
   axiosOptions?: AxiosRequestConfig
-): Promise<ApiResponse<IdIndexedData<RankedStats>>> {
-  const response = await EuClient.queryApi(
+): Promise<Either<string, ApiResponse<IdIndexedData<RankedStats>>>> {
+  const response: EitherApiResponse<
+    IdIndexedData<RankedStats>
+  > = await EuClient.queryApi(
     "wows/seasons/accountinfo",
     `&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
     axiosOptions
   );
-  if (isErrorReponse(response)) {
-    throw new Error("Ranked stats fetch failed");
-  }
-  return response as ApiResponse<IdIndexedData<RankedStats>>;
+  return response
+    .catchMap(_ => Left("Ranked stats fetch failed"))
+    .flatMap(val => {
+      if (val.data[id] === null) {
+        return Left(`Player has not played during season ${seasonId}`);
+      }
+      return Right(val);
+    });
 }
 
 export async function getRankedShipsStats(
@@ -38,16 +45,15 @@ export async function getRankedShipsStats(
   seasonId: number,
   options: Omit<ShipRankedSearchOptions, "season_id" | "account_id"> = {},
   axiosOptions?: AxiosRequestConfig
-): Promise<ApiResponse<PlayerShipRankedStats>> {
-  const response = await EuClient.queryApi(
+) {
+  const response: EitherApiResponse<
+    PlayerShipRankedStats
+  > = await EuClient.queryApi(
     "wows/seasons/shipstats",
     `&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
     axiosOptions
   );
-  if (isErrorReponse(response)) {
-    throw new Error("Ranked ship stats fetch failed");
-  }
-  return response as ApiResponse<PlayerShipRankedStats>;
+  return response.catchMap(_ => Left("Ranked ship stats fetch failed"));
 }
 
 export function getRankedClassStats(

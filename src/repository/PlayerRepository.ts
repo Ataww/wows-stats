@@ -1,42 +1,49 @@
 import { AxiosRequestConfig } from "axios";
-import { ApiResponse, BaseApiResponse, IdIndexedData } from "../domain/ApiResponse";
+import { Either, Left, Right } from "monet";
+import { ApiResponse, ErrorApiResponse, IdIndexedData } from "../domain/ApiResponse";
 import PlayerAccount from "../domain/PlayerAccount";
-import { EuClient, isErrorReponse } from "./ApiClient";
+import { EitherApiResponse, EuClient } from "./ApiClient";
 
 export async function getPlayerProfile(
   id: number,
   axiosOptions?: AxiosRequestConfig
-): Promise<ApiResponse<IdIndexedData<PlayerAccount>>> {
-  const response = await EuClient.queryApi(
+) {
+  const response: Either<
+    ErrorApiResponse,
+    ApiResponse<IdIndexedData<PlayerAccount>>
+  > = await EuClient.queryApi(
     "wows/account/info",
     `&account_id=${id}`,
     axiosOptions
   );
-  if (isErrorReponse(response)) {
-    throw new Error(
-      `No player found: ${response.error.message} - ${response.error.field}:${
-        response.error.value
-      }`
-    );
-  }
-  return response as ApiResponse<IdIndexedData<PlayerAccount>>;
+  return response.catchMap(({ error }) =>
+    Left(`No player found: ${error.message} - ${error.field}:${error.value}`)
+  );
 }
 
 export async function findPlayer(
   name: string,
   axiosOptions?: AxiosRequestConfig
-): Promise<ApiResponse<IdIndexedData<PlayerAccount>>> {
-  const response: BaseApiResponse = await EuClient.queryApi(
+): Promise<Either<string, ApiResponse<IdIndexedData<PlayerAccount>>>> {
+  const response: EitherApiResponse<
+    IdIndexedData<PlayerAccount>
+  > = await EuClient.queryApi(
     "wows/account/list",
     `&search=${name}&type=exact`,
     axiosOptions
   );
-  if (isErrorReponse(response)) {
-    throw new Error(
-      `Invalid player search query: ${response.error.message} - ${
-        response.error.field
-      }:${response.error.value}`
-    );
-  }
-  return response as ApiResponse<IdIndexedData<PlayerAccount>>;
+  return response
+    .catchMap(({ error }) =>
+      Left(
+        `Invalid player search query: ${error.message} - ${error.field}:${
+          error.value
+        }`
+      )
+    )
+    .flatMap(val => {
+      if (val.metadata.count === 0) {
+        return Left(`No player found with name ${name}`);
+      }
+      return Right(val);
+    });
 }

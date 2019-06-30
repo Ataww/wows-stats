@@ -1,4 +1,5 @@
 import Axios, { AxiosRequestConfig } from "axios";
+import { Either, Left, Right } from "monet";
 import {
   ApiResponse,
   BaseApiResponse,
@@ -23,6 +24,8 @@ export function isErrorReponse(
   return response.status === "error";
 }
 
+export type EitherApiResponse<V> = Either<ErrorApiResponse, ApiResponse<V>>;
+
 class ApiClient {
   private readonly options: ClientOptions;
   private _queryConfig?: AxiosRequestConfig;
@@ -44,13 +47,8 @@ class ApiClient {
     path: string,
     parameters: string,
     axiosOptions?: AxiosRequestConfig
-  ): Promise<ApiResponse<T> | ErrorApiResponse> {
-    console.log(this.options);
+  ): Promise<Either<ErrorApiResponse, ApiResponse<T>>> {
     try {
-      const queryString = `${this.options.realm}/${path}?application_id=${
-        this.options.applicationId
-      }${parameters}`;
-      console.log(queryString);
       const response = await Axios.get(
         `${this.options.realm}/${path}/?application_id=${
           this.options.applicationId
@@ -59,9 +57,9 @@ class ApiClient {
       );
       const apiResponse: BaseApiResponse = response.data;
       if (isErrorReponse(apiResponse)) {
-        return apiResponse as ErrorApiResponse;
+        return Left(apiResponse as ErrorApiResponse);
       }
-      return apiResponse as ApiResponse<T>;
+      return Right(apiResponse as ApiResponse<T>);
     } catch (e) {
       if (e.response) {
         const error: ErrorApiResponse = {
@@ -73,7 +71,7 @@ class ApiClient {
             value: e.response.data
           }
         };
-        return error;
+        return Left(error);
       } else if (Axios.isCancel(e)) {
         console.log("Request cancelled", e.message);
       } else {

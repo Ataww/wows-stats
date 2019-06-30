@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useCallback, useMemo } from "react";
-import { Link } from "react-router-dom";
-import { findPlayer } from "./repository/PlayerRepository";
-import PlayerAccount from "./domain/PlayerAccount";
 import Axios from "axios";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 import { Loading } from "./components";
+import PlayerAccount from "./domain/PlayerAccount";
+import { findPlayer } from "./repository/PlayerRepository";
 
 export default () => {
   const [query, setQuery] = useState("");
@@ -14,19 +14,19 @@ export default () => {
   const cancelHandle = useMemo(() => Axios.CancelToken.source(), []);
   const doSearch = useCallback(async () => {
     setResult(undefined);
+    setError(undefined);
     setSearching(true);
-    try {
-      const found = await findPlayer(query, {
-        cancelToken: cancelHandle.token
-      });
-      const foundData = Object.values(found.data);
-      if (foundData.length === 0) {
-        setError("No player found");
+    const found = await findPlayer(query, {
+      cancelToken: cancelHandle.token
+    });
+    found.cata(
+      err => {
+        setError(err);
+      },
+      response => {
+        setResult(Object.values(response.data)[0]);
       }
-      setResult(Object.values(found.data)[0]);
-    } catch (e) {
-      setError(e.message);
-    }
+    );
     setSearching(false);
   }, [query, cancelHandle.token]);
 

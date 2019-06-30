@@ -1,5 +1,8 @@
 import Axios from "axios";
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
+import { Loading } from "./components";
+import { IdIndexedData } from "./domain/ApiResponse";
 import { RankedStats } from "./domain/PlayerStats";
 import Warship from "./domain/Ship";
 import { PlayerShipRankedStats } from "./domain/ShipStats";
@@ -8,9 +11,6 @@ import {
   getRankedStats
 } from "./repository/RankedRepository";
 import { getShips } from "./repository/ShipRepository";
-import { IdIndexedData } from "./domain/ApiResponse";
-import { Loading } from "./components";
-import { Link } from "react-router-dom";
 
 export default ({ id, seasonId }: { id: number; seasonId: number }) => {
   const [stats, setStats] = useState<RankedStats>();
@@ -46,12 +46,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
   useEffect(() => {
     getRankedStats(id, seasonId, {}, { cancelToken: cancelHandle.token }).then(
       response => {
-        const stats = response.data[id];
-        if (!stats) {
-          cancelHandle.cancel();
-          setError("Player has not played during season");
-        }
-        setStats(response.data[id]);
+        response.cata(setError, val => setStats(val.data[id]));
       }
     );
   }, [id, seasonId, cancelHandle.token, cancelHandle]);
@@ -63,7 +58,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
       {},
       { cancelToken: cancelHandle.token }
     ).then(response => {
-      setShipStats(response.data);
+      response.cata(_ => {}, val => setShipStats(val.data));
     });
   }, [id, seasonId, cancelHandle.token]);
 
@@ -76,7 +71,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
         },
         { cancelToken: cancelHandle.token }
       ).then(response => {
-        setShips(response.data);
+        response.cata(_ => {}, val => setShips(val.data));
       });
     }
   }, [shipStats, id, cancelHandle.token]);
@@ -146,6 +141,9 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
           </tbody>
         </table>
       </div>
+      <p>
+        <Link to={`/profile/${id}`}>Back</Link>
+      </p>
     </div>
   );
 };

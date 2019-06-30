@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
-import { getPlayerProfile } from "./repository/PlayerRepository";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Loading } from "./components";
+import { getPlayerProfile } from "./repository/PlayerRepository";
 
 export default ({ id }: { id: number }) => {
   const [user, setUser] = useState<any>(undefined);
   const [isLoaded, setLoaded] = useState(false);
   const [delay, setDelay] = useState(false);
+  const [error, setError] = useState<string>();
 
   useEffect(() => {
     const timeout = setTimeout(() => setDelay(true), 300);
@@ -15,15 +16,29 @@ export default ({ id }: { id: number }) => {
     };
   }, []);
   useEffect(() => {
-    getPlayerProfile(id).then(response => {
-      setUser(response.data[id]);
-      setLoaded(true);
+    getPlayerProfile(id).then(res => {
+      res.cata(
+        err => setError(err),
+        response => {
+          setUser(response.data[id]);
+          setLoaded(true);
+        }
+      );
     });
   }, [id]);
 
-  return !(isLoaded && delay) ? (
-    <Loading />
-  ) : (
+  if (!(isLoaded && delay)) {
+    return <Loading />;
+  } else if (error) {
+    return (
+      <div>
+        <h3>Error</h3>
+        <p>{error}</p>
+        <Link to="/">Back</Link>
+      </div>
+    );
+  }
+  return (
     <div>
       <h1>{user.nickname}</h1>
       <p>{user.account_id}</p>
