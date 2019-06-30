@@ -22,7 +22,7 @@ export interface ErrorApiResponse extends BaseApiResponse {
 }
 
 export interface ApiResponse<T = any> extends BaseApiResponse {
-  metadata: ResponseMetadata;
+  meta: ResponseMetadata;
   data: T;
 }
 

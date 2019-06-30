@@ -1,0 +1,15 @@
+.divider {
+  margin: 1ch;
+  width: 100%;
+  height: 1ch;
+  position: relative;
+  &::after {
+    content: "";
+    background: black;
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    width: 50%;
+    height: 1px;
+  }
+}

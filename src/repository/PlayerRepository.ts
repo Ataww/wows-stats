@@ -41,7 +41,7 @@ export async function findPlayer(
       )
     )
     .flatMap(val => {
-      if (val.metadata.count === 0) {
+      if (val.meta.count === 0) {
         return Left(`No player found with name ${name}`);
       }
       return Right(val);

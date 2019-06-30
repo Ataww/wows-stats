@@ -1,7 +1,7 @@
 import Axios from "axios";
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { Loading } from "./components";
+import { Loading, Divider } from "./components";
 import { IdIndexedData } from "./domain/ApiResponse";
 import { RankedStats } from "./domain/PlayerStats";
 import Warship from "./domain/Ship";
@@ -109,6 +109,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
               100}
         </p>
       </div>
+      <Divider />
       <div className="ship-stats">
         <h3>Ship stats</h3>
         <table className="ship-table">
@@ -141,6 +142,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
           </tbody>
         </table>
       </div>
+      <Divider />
       <p>
         <Link to={`/profile/${id}`}>Back</Link>
       </p>
