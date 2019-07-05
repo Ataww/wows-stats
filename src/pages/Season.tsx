@@ -1,16 +1,16 @@
 import Axios from "axios";
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { Loading, Divider } from "./components";
-import { IdIndexedData } from "./domain/ApiResponse";
-import { RankedStats } from "./domain/PlayerStats";
-import Warship from "./domain/Ship";
-import { PlayerShipRankedStats } from "./domain/ShipStats";
+import { Loading, Divider } from "../components";
+import { IdIndexedData } from "../domain/ApiResponse";
+import { RankedStats } from "../domain/PlayerStats";
+import Warship from "../domain/Ship";
+import { PlayerShipRankedStats } from "../domain/ShipStats";
 import {
   getRankedShipsStats,
   getRankedStats
-} from "./repository/RankedRepository";
-import { getShips } from "./repository/ShipRepository";
+} from "../repository/RankedRepository";
+import { getShips } from "../repository/ShipRepository";
 
 export default ({ id, seasonId }: { id: number; seasonId: number }) => {
   const [stats, setStats] = useState<RankedStats>();

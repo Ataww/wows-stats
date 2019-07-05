@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Profile from "./Profile";
-import Search from "./Search";
-import Season from "./Season";
+import Profile from "./pages/Profile";
+import Search from "./pages/Search";
+import Season from "./pages/Season";
 
 const App: React.FC = () => {
   return (

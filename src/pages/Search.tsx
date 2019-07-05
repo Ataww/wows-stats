@@ -1,9 +1,9 @@
 import Axios from "axios";
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { Loading } from "./components";
-import PlayerAccount from "./domain/PlayerAccount";
-import { findPlayer } from "./repository/PlayerRepository";
+import { Loading } from "../components";
+import PlayerAccount from "../domain/PlayerAccount";
+import { findPlayer } from "../repository/PlayerRepository";
 
 export default () => {
   const [query, setQuery] = useState("");

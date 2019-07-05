@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { Loading } from "./components";
-import { getPlayerProfile } from "./repository/PlayerRepository";
-import { RankedSeason } from "./domain/RankedSeason";
-import { getSeasons } from "./repository/RankedRepository";
+import { Loading } from "../components";
+import { getPlayerProfile } from "../repository/PlayerRepository";
+import { RankedSeason } from "../domain/RankedSeason";
+import { getSeasons } from "../repository/RankedRepository";
 import "./Profile.scss";
 
 export default ({ id }: { id: number }) => {
