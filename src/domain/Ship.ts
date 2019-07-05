@@ -12,5 +12,15 @@ export default interface Warship {
 }
 
 export interface WarshipNations {
-  [nation: string]: string;
+  commonwealth: string;
+  italy: string;
+  usa: string;
+  pan_asia: string;
+  france: string;
+  ussr: string;
+  germany: string;
+  uk: string;
+  japan: string;
+  poland: string;
+  pan_america: string;
 }

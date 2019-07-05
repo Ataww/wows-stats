@@ -1,4 +1,4 @@
-import { isArray } from "lodash";
+import { isArray, isEmpty } from "lodash";
 
 type UrlPrefix = "&" | "?";
 
@@ -8,21 +8,23 @@ type UrlPrefix = "&" | "?";
  *
  * If the options object is empty, an empty string is returned.
  * @param options The object to inline
- * @param prefix The prefix to add to the option string. Defaults to &. Valid options are & or ?
+ * @param prefix The prefix to add to the option string. Defaults to ?. Valid options are & or ?
  */
 export function formatOptions(
-  options?: { [key: string]: any },
-  prefix: UrlPrefix = "&"
+  options?: { [key: string]: string | number | string[] | number[] },
+  prefix: UrlPrefix = "?"
 ) {
   if (!options) {
     return "";
   }
   const fields: string[] = [];
   for (const field in options) {
-    const data = isArray(options[field])
-      ? options[field].join()
-      : options[field];
-    fields.push(`${field}=${data}`);
+    const data = options[field];
+    if (isArray(data) && !isEmpty(data)) {
+      fields.push(`${field}=${data.join(",")}`);
+    } else {
+      fields.push(`${field}=${data}`);
+    }
   }
   if (fields.length > 0) {
     return `${prefix}${fields.join("&")}`;
