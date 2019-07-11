@@ -1,8 +1,6 @@
-enum ShipType {
-    CV = "AirCarrier",
-    BB = "Battleship",
-    DD = "Destroyer",
-    CLA = "Cruiser"
+export enum ShipType {
+  AirCarrier = "AirCarrier",
+  Battleship = "Battleship",
+  Destroyer = "Destroyer",
+  Cruiser = "Cruiser"
 }
-
-export default ShipType;

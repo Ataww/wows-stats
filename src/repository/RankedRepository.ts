@@ -3,7 +3,7 @@ import { Either, Left, Right } from "monet";
 import { ApiResponse, IdIndexedData } from "../domain/ApiResponse";
 import { RankedStats } from "../domain/PlayerStats";
 import { PlayerShipRankedStats } from "../domain/ShipStats";
-import ShipType from "../domain/ShipType";
+import {ShipType} from "../domain/ShipType";
 import { EitherApiResponse, EuClient } from "./ApiClient";
 import { formatOptions } from "./util";
 import { RankedSeason } from "../domain/RankedSeason";
@@ -61,6 +61,7 @@ interface SeasonOptions {
   season_id?: number[];
   fields?: Array<keyof RankedSeason>;
   language?: string;
+  [field: string]: string | string[] | number[] | undefined;
 }
 
 export async function getSeasons(

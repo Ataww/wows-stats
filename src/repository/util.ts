@@ -11,7 +11,9 @@ type UrlPrefix = "&" | "?";
  * @param prefix The prefix to add to the option string. Defaults to ?. Valid options are & or ?
  */
 export function formatOptions(
-  options?: { [key: string]: string | number | string[] | number[] },
+  options?: {
+    [key: string]: string | number | string[] | number[] | undefined;
+  },
   prefix: UrlPrefix = "?"
 ) {
   if (!options) {

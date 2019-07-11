@@ -1,4 +1,4 @@
-import ShipType from "../../domain/ShipType";
+import {ShipType} from "../../domain/ShipType";
 import { PaginatedParameters } from "../PaginatedParameters";
 
 export interface PWarships extends PaginatedParameters {
