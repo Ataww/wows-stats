@@ -1,3 +1,66 @@
+import { Statistics } from "../PlayerStats";
+import { StatisticsType } from "../StatisticsType";
+
+export interface PrivateGroupedData {
+  /**
+   * Blocked
+   */
+  blocked: number;
+
+  /**
+   * Groups
+   */
+  groups: { [id: string]: number[] };
+
+  /**
+   * Not grouped
+   */
+  ungrouped: number;
+}
+
+export interface PrivateData {
+  /**
+   * Overall battle life time in seconds
+   */
+  battle_life_time: number;
+
+  /**
+   * Credits
+   */
+  credits: number;
+  /**
+   * Number of slots available in the Port
+   */
+  empty_slots: number;
+
+  /**
+   * Free Experience
+   */
+  free_xp: number;
+
+  /**
+   * Gold
+   */
+  gold: number;
+
+  /**
+   * Ships in Port.
+   */
+  port?: number[];
+
+  /**
+   * Premium Account expiration time
+   */
+  premium_expires_at: number;
+
+  /**
+   * Number of slots in the Port
+   */
+  slots: number;
+
+  groupd_contacts: PrivateGroupedData;
+}
+
 export interface PersonalData {
   account_id: number;
   created_at: number;
@@ -24,4 +87,8 @@ export interface PersonalData {
    * Date when player details were updated
    */
   updated_at: number;
+
+  private: PrivateData;
+
+  statistics: { [type in StatisticsType]: Statistics };
 }
