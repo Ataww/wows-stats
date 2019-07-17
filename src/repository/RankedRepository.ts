@@ -72,7 +72,7 @@ export async function getSeasons(
     IdIndexedData<RankedSeason>
   > = await EuClient.queryApi(
     "wows/seasons/info",
-    formatOptions(options),
+    formatOptions(options, "&"),
     axiosOptions
   );
   return response.catchMap(_ => Left("Ranked seasons fetch failed"));

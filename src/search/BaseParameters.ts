@@ -12,7 +12,8 @@ export enum Languages {
 }
 
 export interface BaseParameters {
-  application_id: string;
+  application_id?: string;
   language?: Languages;
   fields?: string[];
+  [key: string]: any;
 }

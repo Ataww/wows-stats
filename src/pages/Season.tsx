@@ -67,7 +67,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
       const ids = shipStats[id].map(ship => ship.ship_id);
       getShips(
         {
-          ship_id: ids.join(",")
+          ship_id: ids
         },
         { cancelToken: cancelHandle.token }
       ).then(response => {
