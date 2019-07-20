@@ -1,6 +1,7 @@
 export type AssociativeArray<V = string> = { [key: string]: V };
+export type NumberAssociativeArray<V = string> = { [key: number]: V };
 export type ConstrainedAssociativeArray<K = {}, V = string> = {
-  [key in keyof K]: V
+  [key in keyof K]: V;
 };
 
 export interface MinMax {

@@ -1,4 +1,4 @@
-import { Statistics } from "../PlayerStats";
+import { Statistics } from "../Statistics";
 import { StatisticsType } from "../StatisticsType";
 
 export interface PrivateGroupedData {

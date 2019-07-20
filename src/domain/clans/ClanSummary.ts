@@ -1,4 +1,4 @@
-export interface Clans {
+export interface ClanSummary {
   /**
    * Clan ID
    */

@@ -12,4 +12,4 @@ export * from "./Maps";
 export * from "./Module";
 export * from "./ServiceRecords";
 export * from "./ShipParameters";
-export * from "./Warships";
+export * from "./Warship";

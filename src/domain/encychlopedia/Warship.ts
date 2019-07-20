@@ -218,7 +218,7 @@ export interface ModuleTree {
   type: string;
 }
 
-export interface Warships {
+export interface Warship {
   /**
    * Ship description
    */
