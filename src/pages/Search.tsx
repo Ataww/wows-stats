@@ -1,13 +1,13 @@
 import Axios from "axios";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
-import { Loading } from "../components";
-import PlayerAccount from "../domain/PlayerAccount";
-import { findPlayer } from "../repository/PlayerRepository";
+import React, {useCallback, useEffect, useMemo, useState} from "react";
+import {Link} from "react-router-dom";
+import {Loading} from "../components";
+import {findPlayer} from "../repository/PlayerRepository";
+import {PersonalData} from "../domain/account";
 
 export default () => {
   const [query, setQuery] = useState("");
-  const [result, setResult] = useState<PlayerAccount>();
+  const [result, setResult] = useState<PersonalData>();
   const [isSearching, setSearching] = useState(false);
   const [error, setError] = useState<string>();
 

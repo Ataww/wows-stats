@@ -1,20 +1,16 @@
 import Axios from "axios";
-import React, { useEffect, useMemo, useState } from "react";
-import { Link } from "react-router-dom";
-import { Loading, Divider } from "../components";
-import { IdIndexedData } from "../domain/ApiResponse";
-import { RankedStats } from "../domain/PlayerStats";
-import Warship from "../domain/Ship";
-import { PlayerShipRankedStats } from "../domain/ShipStats";
-import {
-  getRankedShipsStats,
-  getRankedStats
-} from "../repository/RankedRepository";
-import { getShips } from "../repository/ShipRepository";
+import React, {useEffect, useMemo, useState} from "react";
+import {Link} from "react-router-dom";
+import {Divider, Loading} from "../components";
+import {IdIndexedData} from "../domain/ApiResponse";
+import {getRankedShipsStats, getRankedStats} from "../repository/RankedRepository";
+import {getShips} from "../repository/ShipRepository";
+import {RankedPlayerStatistics, RankedShipStatistics} from "../domain/seasons";
+import {Warship} from "../domain/encychlopedia";
 
 export default ({ id, seasonId }: { id: number; seasonId: number }) => {
-  const [stats, setStats] = useState<RankedStats>();
-  const [shipStats, setShipStats] = useState<PlayerShipRankedStats>();
+  const [stats, setStats] = useState<RankedPlayerStatistics>();
+  const [shipStats, setShipStats] = useState<RankedShipStatistics[]>([]);
   const [ships, setShips] = useState<IdIndexedData<Warship>>({});
   const [isLoaded, setLoaded] = useState(false);
   const [delay, setDelay] = useState(false);
@@ -35,8 +31,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
       stats &&
       stats.seasons[seasonId] &&
       shipStats &&
-      shipStats[id] &&
-      shipStats[id].length > 0 &&
+      shipStats.length > 0 &&
       Object.keys(ships).length > 0
     ) {
       setLoaded(true);
@@ -58,13 +53,13 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
       {},
       { cancelToken: cancelHandle.token }
     ).then(response => {
-      response.cata(_ => {}, val => setShipStats(val.data));
+      response.cata(_ => {}, val => setShipStats(val.data[id]));
     });
   }, [id, seasonId, cancelHandle.token]);
 
   useEffect(() => {
-    if (shipStats && shipStats[id] && shipStats[id].length > 0) {
-      const ids = shipStats[id].map(ship => ship.ship_id);
+    if (shipStats && shipStats.length > 0) {
+      const ids = shipStats.map(ship => ship.ship_id);
       getShips(
         {
           ship_id: ids
@@ -128,7 +123,7 @@ export default ({ id, seasonId }: { id: number; seasonId: number }) => {
           </thead>
           <tbody>
             {shipStats &&
-              shipStats[id].map(stat => {
+              shipStats.map(stat => {
                 return (
                   <tr key={stat.ship_id}>
                     <td>{ships[stat.ship_id].name}</td>

@@ -1,12 +1,14 @@
 import { AxiosRequestConfig } from "axios";
 import { Either, Left, Right } from "monet";
 import { ApiResponse, IdIndexedData } from "../domain/ApiResponse";
-import { RankedStats } from "../domain/PlayerStats";
-import { PlayerShipRankedStats } from "../domain/ShipStats";
-import {ShipType} from "../domain/ShipType";
+import { ShipType } from "../domain/ShipType";
 import { EitherApiResponse, EuClient } from "./ApiClient";
 import { formatOptions } from "./util";
-import { RankedSeason } from "../domain/RankedSeason";
+import {
+  RankedPlayerStatistics,
+  RankedSeason,
+  RankedShipStatistics
+} from "../domain/seasons";
 
 export interface PlayerRankedSearchOptions {
   fields?: string[];
@@ -23,9 +25,9 @@ export async function getRankedStats(
   seasonId: number,
   options: Omit<PlayerRankedSearchOptions, "season_id" | "account_id"> = {},
   axiosOptions?: AxiosRequestConfig
-): Promise<Either<string, ApiResponse<IdIndexedData<RankedStats>>>> {
+): Promise<Either<string, ApiResponse<IdIndexedData<RankedPlayerStatistics>>>> {
   const response: EitherApiResponse<
-    IdIndexedData<RankedStats>
+    IdIndexedData<RankedPlayerStatistics>
   > = await EuClient.queryApi(
     "wows/seasons/accountinfo",
     `&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
@@ -48,7 +50,7 @@ export async function getRankedShipsStats(
   axiosOptions?: AxiosRequestConfig
 ) {
   const response: EitherApiResponse<
-    PlayerShipRankedStats
+    IdIndexedData<RankedShipStatistics[]>
   > = await EuClient.queryApi(
     "wows/seasons/shipstats",
     `&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,

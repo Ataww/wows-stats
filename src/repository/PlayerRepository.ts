@@ -1,8 +1,12 @@
 import { AxiosRequestConfig } from "axios";
 import { Either, Left, Right } from "monet";
-import { ApiResponse, ErrorApiResponse, IdIndexedData } from "../domain/ApiResponse";
-import PlayerAccount from "../domain/PlayerAccount";
+import {
+  ApiResponse,
+  ErrorApiResponse,
+  IdIndexedData
+} from "../domain/ApiResponse";
 import { EitherApiResponse, EuClient } from "./ApiClient";
+import { PersonalData } from "../domain/account";
 
 export async function getPlayerProfile(
   id: number,
@@ -10,7 +14,7 @@ export async function getPlayerProfile(
 ) {
   const response: Either<
     ErrorApiResponse,
-    ApiResponse<IdIndexedData<PlayerAccount>>
+    ApiResponse<IdIndexedData<PersonalData>>
   > = await EuClient.queryApi(
     "wows/account/info",
     `&account_id=${id}`,
@@ -24,9 +28,9 @@ export async function getPlayerProfile(
 export async function findPlayer(
   name: string,
   axiosOptions?: AxiosRequestConfig
-): Promise<Either<string, ApiResponse<IdIndexedData<PlayerAccount>>>> {
+): Promise<Either<string, ApiResponse<IdIndexedData<PersonalData>>>> {
   const response: EitherApiResponse<
-    IdIndexedData<PlayerAccount>
+    IdIndexedData<PersonalData>
   > = await EuClient.queryApi(
     "wows/account/list",
     `&search=${name}&type=exact`,
@@ -35,9 +39,7 @@ export async function findPlayer(
   return response
     .catchMap(({ error }) =>
       Left(
-        `Invalid player search query: ${error.message} - ${error.field}:${
-          error.value
-        }`
+        `Invalid player search query: ${error.message} - ${error.field}:${error.value}`
       )
     )
     .flatMap(val => {
