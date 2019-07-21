@@ -1,19 +1,11 @@
 import React, {useEffect, useMemo, useState} from "react";
 import {Field, FieldProps, Form, Formik, FormikProps} from "formik";
-import {
-    accountsStructure,
-    ApiMetadata,
-    apiStructure,
-    Categories,
-    CategoryMetadata,
-    Methods,
-    PlayerMethods
-} from "../common";
+import {accountsStructure, ApiMetadata, apiStructure, CategoryMetadata} from "../common";
 import "./QueryBuilder.scss";
 
 interface QueryParameters {
     category: keyof ApiMetadata;
-    method: Methods;
+    method: string;
     query: string;
 }
 
@@ -27,8 +19,11 @@ const QueryBuilderForm = ({handleChange, values, touched, errors, setFieldValue,
         ), []);
 
     useEffect(() => {
-        setCategory(apiStructure[values.category])
-    }, [values.category]);
+        setCategory(apiStructure[values.category]);
+        if(category) {
+        setFieldValue("method", Object.keys(category.methods)[0]);
+        }
+    }, [values.category, setFieldValue, category]);
 
     useEffect(() => {
         const nodes: React.ReactNode[] = [];
@@ -77,7 +72,7 @@ const QueryBuilderForm = ({handleChange, values, touched, errors, setFieldValue,
 const QueryBuilder: React.FC = props => {
     return (<div>
         <h4>Query Builder</h4>
-        <Formik initialValues={{query: "", category: Categories.ACCOUNT, method: PlayerMethods.PLAYER_SEARCH}}
+        <Formik initialValues={{query: "", category: accountsStructure.path, method: Object.keys(accountsStructure.methods)[0]}}
                 onSubmit={(values, actions) => {
                     console.log(JSON.stringify(values));
                     actions.setSubmitting(false);
