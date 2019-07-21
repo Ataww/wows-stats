@@ -6,7 +6,7 @@ import {IdIndexedData} from "../domain/ApiResponse";
 import {getRankedShipsStats, getRankedStats} from "../repository/RankedRepository";
 import {getShips} from "../repository/ShipRepository";
 import {RankedPlayerStatistics, RankedShipStatistics} from "../domain/seasons";
-import {Warship} from "../domain/encychlopedia";
+import {Warship} from "../domain/encyclopedia";
 
 export default ({ id, seasonId }: { id: number; seasonId: number }) => {
   const [stats, setStats] = useState<RankedPlayerStatistics>();

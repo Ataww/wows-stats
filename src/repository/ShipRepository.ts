@@ -4,7 +4,7 @@ import { IdIndexedData } from "../domain/ApiResponse";
 import { EitherApiResponse, EuClient } from "./ApiClient";
 import { PWarships } from "../search";
 import { formatOptions } from "./util";
-import { Warship } from "../domain/encychlopedia";
+import { Warship } from "../domain/encyclopedia";
 
 /**
  *
