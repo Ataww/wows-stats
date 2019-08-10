@@ -5,6 +5,7 @@ import {
   BaseApiResponse,
   ErrorApiResponse
 } from "../domain/ApiResponse";
+import { formatOptions, QueryParameters } from "./util";
 
 export enum REALM {
   EU = "https://api.worldofwarships.eu",
@@ -33,6 +34,8 @@ class ApiClient {
   constructor(options: ClientOptions) {
     this.options = options;
     this.queryApi = this.queryApi.bind(this);
+    this.formatQuery = this.formatQuery.bind(this);
+    this.prepareQuery = this.prepareQuery.bind(this);
   }
 
   set queryConfig(cfg: AxiosRequestConfig | undefined) {
@@ -43,6 +46,28 @@ class ApiClient {
     return this._queryConfig;
   }
 
+  prepareQuery(path: string, parameters: QueryParameters) {
+    const paramObject: { [key: string]: string } = {};
+    let i = 0;
+    for (const key in parameters) {
+      paramObject[key] = `{${i++}}`;
+    }
+    return this.formatQuery(path, paramObject);
+  }
+
+  formatQuery(path: string, parameters: QueryParameters | string) {
+    const params =
+      typeof parameters === "string" ? parameters : formatOptions(parameters);
+    const prefixedParameters = params !== "" ? `&${params}` : "";
+    return `${this.options.realm}/${path}/?application_id=${this.options.applicationId}${prefixedParameters}`;
+  }
+
+  /**
+   *
+   * @param path
+   * @param parameters A list of query parameters joined by &
+   * @param axiosOptions
+   */
   async queryApi<T>(
     path: string,
     parameters: string,
@@ -50,9 +75,7 @@ class ApiClient {
   ): Promise<Either<ErrorApiResponse, ApiResponse<T>>> {
     try {
       const response = await Axios.get(
-        `${this.options.realm}/${path}/?application_id=${
-          this.options.applicationId
-        }${parameters}`,
+        this.formatQuery(path, parameters),
         axiosOptions
       );
       const apiResponse: BaseApiResponse = response.data;

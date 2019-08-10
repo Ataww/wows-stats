@@ -1,6 +1,12 @@
 import { isArray, isEmpty } from "lodash";
 
-type UrlPrefix = "&" | "?";
+export type QueryParameters = {
+  [key: string]: string | number | string[] | number[] | undefined;
+};
+
+export type TypedParameters<T> = {
+  [key in keyof T]: string | number | string[] | number[] | undefined;
+};
 
 /**
  * Format query options to be inlined in the query url.
@@ -8,14 +14,8 @@ type UrlPrefix = "&" | "?";
  *
  * If the options object is empty, an empty string is returned.
  * @param options The object to inline
- * @param prefix The prefix to add to the option string. Defaults to ?. Valid options are & or ?
  */
-export function formatOptions(
-  options?: {
-    [key: string]: string | number | string[] | number[] | undefined;
-  },
-  prefix: UrlPrefix = "?"
-) {
+export function formatOptions(options?: QueryParameters) {
   if (!options) {
     return "";
   }
@@ -29,7 +29,7 @@ export function formatOptions(
     }
   }
   if (fields.length > 0) {
-    return `${prefix}${fields.join("&")}`;
+    return fields.join("&");
   }
   return "";
 }

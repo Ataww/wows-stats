@@ -7,6 +7,7 @@ import {
 } from "../domain/ApiResponse";
 import { EitherApiResponse, EuClient } from "./ApiClient";
 import { PersonalData } from "../domain/account";
+import { formatOptions } from "./util";
 
 export async function getPlayerProfile(
   id: number,
@@ -17,7 +18,7 @@ export async function getPlayerProfile(
     ApiResponse<IdIndexedData<PersonalData>>
   > = await EuClient.queryApi(
     "wows/account/info",
-    `&account_id=${id}`,
+    formatOptions({ account_id: id }),
     axiosOptions
   );
   return response.catchMap(({ error }) =>
@@ -33,7 +34,7 @@ export async function findPlayer(
     IdIndexedData<PersonalData>
   > = await EuClient.queryApi(
     "wows/account/list",
-    `&search=${name}&type=exact`,
+    formatOptions({ search: name, type: "exact" }),
     axiosOptions
   );
   return response

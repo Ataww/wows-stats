@@ -19,7 +19,7 @@ export async function getShips(
     IdIndexedData<Warship>
   > = await EuClient.queryApi(
     "wows/encyclopedia/ships",
-    formatOptions(search, "&"),
+    formatOptions(search),
     axiosOptions
   );
   return response.catchMap(({ error }) =>
