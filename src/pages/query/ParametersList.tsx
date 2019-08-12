@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { Field, FieldArray, FieldArrayRenderProps, FieldProps } from "formik";
 import { Parameter, QueryParameters } from "../QueryBuilder";
 import { apiStructure, QueryMetadata } from "../../common";
@@ -13,10 +13,10 @@ interface ParametersListProps extends FieldArrayRenderProps {
 }
 
 export function ParametersListWrapper({ values }: { values: QueryParameters }) {
-  return <FieldArray name="parameters" render={_ => {
+  return <FieldArray name="parameters" render={props => {
     const method = apiStructure[values.category].methods[values.method];
     if (method) {
-      return null;
+      return <ParametersList method={method} {...props} />;
     } else {
       return null;
     }
@@ -27,6 +27,14 @@ export function ParametersListWrapper({ values }: { values: QueryParameters }) {
 export function ParametersList({ method, form, ...props }: ParametersListProps) {
 
   const [available, taken, take, release] = useDualList(method.parameters as string[]);
+
+  useEffect(() => {
+    console.log(`Available: ${available}`);
+  }, [available]);
+
+  useEffect(() => {
+    console.log(`Taken: ${taken}`);
+  }, [taken]);
 
   const changeValue = (prev: string, cur: string, index: number) => {
     release(prev);
@@ -74,7 +82,8 @@ interface LineProps<T extends BaseParameters = BaseParameters> {
   remove(parameter: string, index?: number): void;
 }
 
-const ParameterLine = <T extends BaseParameters = BaseParameters>({ availableParameters, parameter, changeValue, remove, index }: LineProps) => {
+const ParameterLine = <T extends BaseParameters = BaseParameters>({ availableParameters, parameter, changeValue, remove, index }:
+                                                                    LineProps) => {
   const [currentParameter, setCurrentParameter] = useState(parameter.name);
   const parameters = useMemo(() => pipe(concat([currentParameter]), uniq)(availableParameters as string[]), [currentParameter, availableParameters]);
 
@@ -83,6 +92,7 @@ const ParameterLine = <T extends BaseParameters = BaseParameters>({ availablePar
            render={() => <div className="parameter-select"><ParameterSelect
              fields={parameters}
              setParameter={(prev, cur) => {
+               console.log(`${prev} => ${cur}`);
                setCurrentParameter(cur);
                changeValue(prev, cur, index);
              }
@@ -101,3 +111,4 @@ const ParameterLine = <T extends BaseParameters = BaseParameters>({ availablePar
   ;
   ;
 };
+;

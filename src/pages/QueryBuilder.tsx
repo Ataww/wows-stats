@@ -1,9 +1,9 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { Field, FieldArray, FieldProps, Form, Formik, FormikProps } from "formik";
+import { Field, FieldProps, Form, Formik, FormikProps } from "formik";
 import { accountsStructure, ApiMetadata, apiStructure, CategoryMetadata } from "../common";
 import "./QueryBuilder.scss";
 import { EuClient } from "../repository/ApiClient";
-import { ParametersList, ParametersListWrapper } from "./query/ParametersList";
+import { ParametersListWrapper } from "./query/ParametersList";
 
 export interface Parameter {
   name: string;
