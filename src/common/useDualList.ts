@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { concat, isEmpty, pipe, without } from "ramda";
 
 /**
@@ -7,13 +7,18 @@ import { concat, isEmpty, pipe, without } from "ramda";
  * @param moveRightCB Callback function when moving a value to the right list
  * @param moveLeftCB Callback function when moving a value to the left list
  */
-export default <T>(
+export default function<T extends any = any>(
   initial: T[],
   moveRightCB?: (value: T) => void,
   moveLeftCB?: (value: T) => void
-): [T[], T[], (value?: T) => T | undefined, (value?: T) => T | undefined] => {
-  const [left, setLeft] = useState(initial);
+): [T[], T[], (value?: T) => T | undefined, (value?: T) => T | undefined] {
+  const [left, setLeft] = useState<T[]>([]);
   const [right, setRight] = useState<T[]>([]);
+
+  useEffect(() => {
+    setLeft(initial);
+    setRight([]);
+  }, [initial]);
 
   // Remove value from the left list to put it in the right one
   function moveRight(value?: T) {
@@ -54,4 +59,4 @@ export default <T>(
   }
 
   return [left, right, moveRight, moveLeft];
-};
+}
