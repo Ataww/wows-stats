@@ -59,7 +59,7 @@ class ApiClient {
     const params =
       typeof parameters === "string" ? parameters : formatOptions(parameters);
     const prefixedParameters = params !== "" ? `&${params}` : "";
-    return `${this.options.realm}/${path}/?application_id=${this.options.applicationId}${prefixedParameters}`;
+    return `${this.options.realm}/wows/${path}/?application_id=${this.options.applicationId}${prefixedParameters}`;
   }
 
   /**
