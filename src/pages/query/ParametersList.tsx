@@ -36,6 +36,11 @@ export function ParametersList({ method, form, ...props }: ParametersListProps) 
     console.log(`Taken: ${taken}`);
   }, [taken]);
 
+  useEffect(() => {
+    form.setFieldValue("parameters", []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [method]);
+
   const changeValue = (prev: string, cur: string, index: number) => {
     release(prev);
     take(cur);
