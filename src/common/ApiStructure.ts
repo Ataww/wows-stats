@@ -52,7 +52,7 @@ export const accountsStructure: CategoryMetadata = {
     } as QueryMetadata<AccountSearch>,
     info: {
       method: PlayerMethods.PLAYER_PERSONAL_DATA,
-      parameters: [],
+      parameters: ["account_id", "access_token", "extra", "fields", "language"],
       path: "info"
     } as QueryMetadata<PlayerSearch>,
     achievements: {
