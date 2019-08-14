@@ -13,7 +13,7 @@ export const ParameterSelect = <T extends BaseParameters = BaseParameters>(props
     () => props.fields.map((v, idx) => <option key={idx}
                                                value={String(v)}>{v}</option>),
     [props.fields]);
-  return (<select onChange={e => {
+  return (<select value={selected as string} onChange={e => {
     setSelected(e.target.value);
     props.setParameter(selected as string, e.target.value);
   }}>
