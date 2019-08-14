@@ -31,7 +31,7 @@ export async function getRankedStats(
   const response: EitherApiResponse<
     IdIndexedData<RankedPlayerStatistics>
   > = await EuClient.queryApi(
-    "wows/seasons/accountinfo",
+    "seasons/accountinfo",
     formatOptions({ account_id: id, season_id: seasonId, ...options }),
     axiosOptions
   );
@@ -54,7 +54,7 @@ export async function getRankedShipsStats(
   const response: EitherApiResponse<
     IdIndexedData<RankedShipStatistics[]>
   > = await EuClient.queryApi(
-    "wows/seasons/shipstats",
+    "seasons/shipstats",
     formatOptions({ account_id: id, season_id: seasonId, ...options }),
     axiosOptions
   );
@@ -76,7 +76,7 @@ export async function getSeasons(
   const response: EitherApiResponse<
     IdIndexedData<RankedSeason>
   > = await EuClient.queryApi(
-    "wows/seasons/info",
+    "seasons/info",
     formatOptions(options),
     axiosOptions
   );

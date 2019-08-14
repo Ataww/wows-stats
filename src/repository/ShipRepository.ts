@@ -18,7 +18,7 @@ export async function getShips(
   const response: EitherApiResponse<
     IdIndexedData<Warship>
   > = await EuClient.queryApi(
-    "wows/encyclopedia/ships",
+    "encyclopedia/ships",
     formatOptions(search),
     axiosOptions
   );

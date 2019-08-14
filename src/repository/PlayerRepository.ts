@@ -17,7 +17,7 @@ export async function getPlayerProfile(
     ErrorApiResponse,
     ApiResponse<IdIndexedData<PersonalData>>
   > = await EuClient.queryApi(
-    "wows/account/info",
+    "account/info",
     formatOptions({ account_id: id }),
     axiosOptions
   );
@@ -33,7 +33,7 @@ export async function findPlayer(
   const response: EitherApiResponse<
     IdIndexedData<PersonalData>
   > = await EuClient.queryApi(
-    "wows/account/list",
+    "account/list",
     formatOptions({ search: name, type: "exact" }),
     axiosOptions
   );
