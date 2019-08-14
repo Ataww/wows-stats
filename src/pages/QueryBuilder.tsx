@@ -57,7 +57,7 @@ const QueryBuilderForm = ({ values, touched, errors, setFieldValue }: FormikProp
     <Form>
       <Field name={"query"} render={({ field, form }: FieldProps<QueryParameters>) => <div>
         <label htmlFor="query-field">Query preview</label>
-        <textarea id="query-field" cols={50} {...field} placeholder="query" onChange={() => {
+        <textarea id="query-field" cols={80} rows={4} {...field} placeholder="query" onChange={() => {
         }}>
                 </textarea>
         {form.touched.query && form.errors.query && form.errors.query}
