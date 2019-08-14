@@ -26,7 +26,7 @@ export function ParametersListWrapper({ values }: { values: QueryParameters }) {
 
 export function ParametersList({ method, form, ...props }: ParametersListProps) {
 
-  const [available, taken, take, release] = useDualList(method.parameters as string[]);
+  const [available, taken, take, release, swap] = useDualList(method.parameters as string[]);
 
   useEffect(() => {
     console.log(`Available: ${available}`);
@@ -42,8 +42,7 @@ export function ParametersList({ method, form, ...props }: ParametersListProps) 
   }, [method]);
 
   const changeValue = (prev: string, cur: string, index: number) => {
-    release(prev);
-    take(cur);
+    swap(cur, prev);
     props.replace(index, {
       name: cur,
       value: ""

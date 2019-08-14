@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { concat, isEmpty, pipe, without } from "ramda";
+import { concat, isEmpty, pipe, without, uniq } from "ramda";
 
 /**
  *
@@ -11,7 +11,13 @@ export default function<T extends any = any>(
   initial: T[],
   moveRightCB?: (value: T) => void,
   moveLeftCB?: (value: T) => void
-): [T[], T[], (value?: T) => T | undefined, (value?: T) => T | undefined] {
+): [
+  T[],
+  T[],
+  (value?: T) => T | undefined,
+  (value?: T) => T | undefined,
+  (leftVal: T, rightVal: T) => T[] | undefined
+] {
   const [left, setLeft] = useState<T[]>([]);
   const [right, setRight] = useState<T[]>([]);
 
@@ -26,14 +32,16 @@ export default function<T extends any = any>(
       return;
     }
     const entry: T = value ? value : left[0];
-    pipe(
+    const removeLeft = pipe(
       without([entry]),
       setLeft
-    )(left);
-    pipe(
+    );
+    removeLeft(left);
+    const addRight = pipe(
       concat([entry]),
       setRight
-    )(right);
+    );
+    addRight(right);
     // execute callback if defined
     moveRightCB && moveRightCB(entry);
     return entry;
@@ -45,18 +53,39 @@ export default function<T extends any = any>(
       return;
     }
     const entry: T = value ? value : right[0];
-    pipe(
+    const removeRight = pipe(
       without([entry]),
       setRight
-    )(right);
-    pipe(
+    );
+    removeRight(right);
+    const addLeft = pipe(
       concat([entry]),
       setLeft
-    )(left);
+    );
+    addLeft(left);
     // execute callback if defined
     moveLeftCB && moveLeftCB(entry);
     return entry;
   }
 
-  return [left, right, moveRight, moveLeft];
+  function swap(leftVal: T, rightVal: T) {
+    if (isEmpty(left) || isEmpty(right)) {
+      return;
+    }
+    pipe(
+      without([rightVal]),
+      concat([leftVal]),
+      uniq,
+      setRight
+    )(right);
+    pipe(
+      without([leftVal]),
+      concat([rightVal]),
+      uniq,
+      setLeft
+    )(left);
+    return [rightVal, leftVal];
+  }
+
+  return [left, right, moveRight, moveLeft, swap];
 }
