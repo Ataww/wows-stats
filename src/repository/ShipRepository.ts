@@ -18,8 +18,8 @@ export async function getShips(
   const response: EitherApiResponse<
     IdIndexedData<Warship>
   > = await EuClient.queryApi(
-    "wows/encyclopedia/ships",
-    formatOptions(search, "&"),
+    "encyclopedia/ships",
+    formatOptions(search),
     axiosOptions
   );
   return response.catchMap(({ error }) =>

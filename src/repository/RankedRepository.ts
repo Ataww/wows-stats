@@ -14,8 +14,10 @@ export interface PlayerRankedSearchOptions {
   fields?: string[];
   language?: string;
   access_token?: string;
+
   [field: string]: any;
 }
+
 export interface ShipRankedSearchOptions extends PlayerRankedSearchOptions {
   ship_id?: number;
 }
@@ -29,8 +31,8 @@ export async function getRankedStats(
   const response: EitherApiResponse<
     IdIndexedData<RankedPlayerStatistics>
   > = await EuClient.queryApi(
-    "wows/seasons/accountinfo",
-    `&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
+    "seasons/accountinfo",
+    formatOptions({ account_id: id, season_id: seasonId, ...options }),
     axiosOptions
   );
   return response
@@ -52,8 +54,8 @@ export async function getRankedShipsStats(
   const response: EitherApiResponse<
     IdIndexedData<RankedShipStatistics[]>
   > = await EuClient.queryApi(
-    "wows/seasons/shipstats",
-    `&account_id=${id}&season_id=${seasonId}${formatOptions(options)}`,
+    "seasons/shipstats",
+    formatOptions({ account_id: id, season_id: seasonId, ...options }),
     axiosOptions
   );
   return response.catchMap(_ => Left("Ranked ship stats fetch failed"));
@@ -63,6 +65,7 @@ interface SeasonOptions {
   season_id?: number[];
   fields?: Array<keyof RankedSeason>;
   language?: string;
+
   [field: string]: string | string[] | number[] | undefined;
 }
 
@@ -73,8 +76,8 @@ export async function getSeasons(
   const response: EitherApiResponse<
     IdIndexedData<RankedSeason>
   > = await EuClient.queryApi(
-    "wows/seasons/info",
-    formatOptions(options, "&"),
+    "seasons/info",
+    formatOptions(options),
     axiosOptions
   );
   return response.catchMap(_ => Left("Ranked seasons fetch failed"));

@@ -1,0 +1,10 @@
+
+.parameters-list {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .parameter-row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+}
