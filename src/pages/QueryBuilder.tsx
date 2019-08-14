@@ -79,11 +79,16 @@ const QueryBuilderForm = ({ values, touched, errors, setFieldValue }: FormikProp
         </div>
       )}/>
       <ParametersListWrapper values={values}/>
+      <div>
+        <button type={"submit"}>Run query</button>
+      </div>
     </Form>
   );
 };
 
 const QueryBuilder: React.FC = () => {
+  const [jsonResult, setJsonResult] = useState<any>(null);
+
   return (<div>
     <h4>Query Builder</h4>
     <Formik
@@ -93,11 +98,18 @@ const QueryBuilder: React.FC = () => {
         method: Object.keys(accountsStructure.methods)[0],
         parameters: []
       }}
-      onSubmit={(values, actions) => {
+      onSubmit={async (values, actions) => {
+        const response = await EuClient.runQuery(values.query);
+        response.cata(({ error }) => setJsonResult(error), val => setJsonResult(val.data));
         actions.setSubmitting(false);
       }}
     >
-      {(props: FormikProps<QueryParameters>) => <QueryBuilderForm {...props}  />}
+      {(props: FormikProps<QueryParameters>) => <div><QueryBuilderForm {...props}  />
+        <div>
+          <h4>JSON result</h4>
+          <textarea cols={80} rows={10} value={JSON.stringify(jsonResult)} readOnly/>
+        </div>
+      </div>}
     </Formik>
   </div>);
 };

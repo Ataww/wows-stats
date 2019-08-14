@@ -73,11 +73,15 @@ class ApiClient {
     parameters: string,
     axiosOptions?: AxiosRequestConfig
   ): Promise<Either<ErrorApiResponse, ApiResponse<T>>> {
+    return this.runQuery(this.formatQuery(path, parameters));
+  }
+
+  async runQuery<T>(
+    query: string,
+    axiosOptions?: AxiosRequestConfig
+  ): Promise<Either<ErrorApiResponse, ApiResponse<T>>> {
     try {
-      const response = await Axios.get(
-        this.formatQuery(path, parameters),
-        axiosOptions
-      );
+      const response = await Axios.get(query, axiosOptions);
       const apiResponse: BaseApiResponse = response.data;
       if (isErrorReponse(apiResponse)) {
         return Left(apiResponse as ErrorApiResponse);
