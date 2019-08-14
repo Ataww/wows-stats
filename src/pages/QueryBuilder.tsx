@@ -4,6 +4,7 @@ import { accountsStructure, ApiMetadata, apiStructure, CategoryMetadata } from "
 import "./QueryBuilder.scss";
 import { EuClient } from "../repository/ApiClient";
 import { ParametersListWrapper } from "./query/ParametersList";
+import { parse } from "json2csv";
 
 export interface Parameter {
   name: string;
@@ -88,6 +89,15 @@ const QueryBuilderForm = ({ values, touched, errors, setFieldValue }: FormikProp
 
 const QueryBuilder: React.FC = () => {
   const [jsonResult, setJsonResult] = useState<any>(null);
+  const [csvResult, setCsvResult] = useState("");
+
+  useEffect(() => {
+    if (jsonResult) {
+      setCsvResult(parse(jsonResult, {
+        flatten: true
+      }));
+    }
+  }, [jsonResult, csvResult]);
 
   return (<div>
     <h4>Query Builder</h4>
@@ -108,6 +118,10 @@ const QueryBuilder: React.FC = () => {
         <div>
           <h4>JSON result</h4>
           <textarea cols={80} rows={10} value={JSON.stringify(jsonResult)} readOnly/>
+        </div>
+        <div>
+          <h4>CSV result</h4>
+          <textarea cols={80} rows={10} value={csvResult} readOnly/>
         </div>
       </div>}
     </Formik>

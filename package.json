@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@types/json2csv": "^4.5.0",
     "@types/lodash": "^4.14.135",
     "@types/ramda": "^0.26.18",
     "node-sass": "^4.12.0"
