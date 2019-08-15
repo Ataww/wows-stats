@@ -123,6 +123,9 @@ const QueryBuilder: React.FC = () => {
           <h4>CSV result</h4>
           <textarea cols={80} rows={10} value={csvResult} readOnly/>
         </div>
+        <a href={window.URL.createObjectURL(new Blob([csvResult], { type: "text/csv" }))} download={"result.csv"}>
+          Download CSV
+        </a>
       </div>}
     </Formik>
   </div>);
