@@ -12,11 +12,23 @@ export interface CategoryMetadata {
 
 export interface QueryMetadata<T = any> {
   method: Methods;
-  parameters: Array<keyof T>;
+  parameters: Array<keyof T | MethodParameter<T>>;
   path: string;
   paginated?: boolean;
 }
 
+export interface MethodParameter<T> {
+  name: keyof T;
+  required?: boolean;
+  values?: string[];
+}
+
 export interface ApiMetadata {
   [path: string]: CategoryMetadata;
+}
+
+export function isStringParameter<T>(
+  param: keyof T | MethodParameter<T>
+): param is keyof T {
+  return typeof param === "string";
 }

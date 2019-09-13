@@ -46,27 +46,60 @@ export const accountsStructure: CategoryMetadata = {
   methods: {
     list: {
       method: PlayerMethods.PLAYER_SEARCH,
-      parameters: ["search", "type"],
+      parameters: [
+        { name: "search", required: true },
+        { name: "type", values: ["exact", "startswith"] }
+      ],
       path: "list",
       paginated: true
     } as QueryMetadata<AccountSearch>,
     info: {
       method: PlayerMethods.PLAYER_PERSONAL_DATA,
-      parameters: ["account_id", "access_token", "extra", "fields", "language"],
+      parameters: [
+        { name: "account_id", required: true },
+        "access_token",
+        {
+          name: "extra",
+          values: [
+            "private.grouped_contacts",
+            "private.port",
+            "statistics.club",
+            "statistics.oper_div",
+            "statistics.oper_div_hard",
+            "statistics.oper_solo",
+            "statistics.pve",
+            "statistics.pve_div2",
+            "statistics.pve_div3",
+            "statistics.pve_solo",
+            "statistics.pvp_div2",
+            "statistics.pvp_div3",
+            "statistics.pvp_solo",
+            "statistics.rank_div2",
+            "statistics.rank_div3",
+            "statistics.rank_solo"
+          ]
+        },
+        "fields",
+        "language"
+      ],
       path: "info"
     } as QueryMetadata<PlayerSearch>,
     achievements: {
       method: PlayerMethods.PLAYER_ACHIEVEMENTS,
-      parameters: ["account_id", "access_token", "extra"],
+      parameters: [
+        { name: "account_id", required: true },
+        "access_token",
+        "fields",
+        "language"
+      ],
       path: "achievements"
     } as QueryMetadata<PlayerAchievementsSearch>,
     statsbydate: {
       method: PlayerMethods.PLAYER_STATISTICS,
       parameters: [
         "access_token",
-        "account_id",
-        "application_id",
-        "extra",
+        { name: "account_id", required: true },
+        { name: "extra", values: ["pve"] },
         "dates",
         "fields",
         "language"
@@ -88,7 +121,17 @@ export const encyclopediaStructure: CategoryMetadata = {
     } as QueryMetadata<BaseParameters>,
     warships: {
       method: EncyclopediaMethods.ENCYCLO_WARSHIPS,
-      parameters: ["nation", "type"],
+      parameters: [
+        "nation",
+        "type",
+        "page_no",
+        "limit",
+        "ship_id",
+        {
+          name: "ship_type",
+          values: ["AirCarrier", "Battleship", "Destroyer", "Cruiser"]
+        }
+      ],
       path: "warships",
       paginated: true
     } as QueryMetadata<PWarships>,
@@ -107,7 +150,7 @@ export const encyclopediaStructure: CategoryMetadata = {
         "fire_control_id",
         "flight_control_id",
         "hull_id",
-        "ship_id",
+        { name: "ship_id", required: true },
         "torpedo_bomber_id",
         "torpedoes_id"
       ],
@@ -115,7 +158,25 @@ export const encyclopediaStructure: CategoryMetadata = {
     } as QueryMetadata<PShipParameters>,
     modules: {
       method: EncyclopediaMethods.ENCYCLO_MODULES,
-      parameters: ["type", "module_id"],
+      parameters: [
+        {
+          name: "type",
+          values: [
+            "Artillery",
+            "Torpedoes",
+            "Suo",
+            "FlightControl",
+            "Hull",
+            "Engine",
+            "Fighter",
+            "TorpedoBomber",
+            "DiveBomber"
+          ]
+        },
+        "module_id",
+        "page_no",
+        "limit"
+      ],
       path: "modules",
       paginated: true
     } as QueryMetadata<PModule>,
@@ -146,7 +207,15 @@ export const encyclopediaStructure: CategoryMetadata = {
     } as QueryMetadata<PBattleType>,
     consumables: {
       method: EncyclopediaMethods.ENCYCLO_CONSUMABLES,
-      parameters: ["type", "consumable_id"],
+      parameters: [
+        {
+          name: "type",
+          values: ["Camouflage", "Permoflage", "Flags", "Modernization", "Skin"]
+        },
+        "consumable_id",
+        "page_no",
+        "limit"
+      ],
       path: "consumables",
       paginated: true
     } as QueryMetadata<PConsumables>,
@@ -174,7 +243,35 @@ export const warshipsStructure: CategoryMetadata = {
   methods: {
     stats: {
       method: WarshipsMethods.SHIP_PLAYER_STATS,
-      parameters: ["type", "nation", "fields", "language", "ship_id"],
+      parameters: [
+        "type",
+        "nation",
+        "fields",
+        "language",
+        "ship_id",
+        "access_token",
+        "in_garage",
+        { name: "account_id", required: true },
+        {
+          name: "extra",
+          values: [
+            "club",
+            "oper_div",
+            "oper_div_hard",
+            "oper_solo",
+            "pve",
+            "pve_div2",
+            "pve_div3",
+            "pve_solo",
+            "pvp_div2",
+            "pvp_div3",
+            "pvp_solo",
+            "rank_div2",
+            "rank_div3",
+            "rank_solo"
+          ]
+        }
+      ],
       path: "stats",
       paginated: true
     } as QueryMetadata<PWarships>
@@ -193,12 +290,20 @@ export const seasonsStructure: CategoryMetadata = {
     } as QueryMetadata<PSeasons>,
     shipstats: {
       method: SeasonsMethods.SEASONS_SHIP_PLAYER_STATS,
-      parameters: ["season_id", "ship_id", "account_id"],
+      parameters: [
+        "season_id",
+        "ship_id",
+        { name: "account_id", required: true }
+      ],
       path: "shipstats"
     } as QueryMetadata<PRankedShipStatistics>,
     accountinfo: {
       method: SeasonsMethods.SEASONS_PLAYER_STATS,
-      parameters: ["account_id", "season_id", "access_token"],
+      parameters: [
+        { name: "account_id", required: true },
+        "season_id",
+        "access_token"
+      ],
       path: "accountinfo"
     } as QueryMetadata<PRankedPlayerStatistics>
   }
@@ -217,13 +322,29 @@ export const clansStructure: CategoryMetadata = {
     } as QueryMetadata<PClans>,
     info: {
       method: ClansMethods.CLANS_DETAILS,
-      parameters: ["search"],
+      parameters: [
+        {
+          name: "clan_id",
+          required: true
+        },
+        {
+          name: "extra",
+          values: ["members"]
+        }
+      ],
       path: "info",
       paginated: true
     } as QueryMetadata<PClanDetails>,
     accountinfo: {
       method: ClansMethods.CLANS_PLAYER_DATA,
-      parameters: ["search", "extra"],
+      parameters: [
+        {
+          name: "account_id",
+          required: true
+        },
+        "search",
+        "extra"
+      ],
       path: "accountinfo",
       paginated: true
     } as QueryMetadata<PClanPlayerData>,

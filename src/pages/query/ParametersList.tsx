@@ -1,20 +1,24 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { Field, FieldArray, FieldArrayRenderProps, FieldProps } from "formik";
+import React, { useEffect, useMemo } from "react";
+import { FieldArray, FieldArrayRenderProps } from "formik";
 import { Parameter, QueryParameters } from "../QueryBuilder";
-import { apiStructure, QueryMetadata } from "../../common";
+import { apiStructure, isStringParameter, MethodParameter, QueryMetadata } from "../../common";
 import { BaseParameters } from "../../search";
-import { ParameterSelect } from "./ParameterSelect";
-import { concat, isEmpty, pipe, uniq } from "ramda";
+import { isEmpty, map, pipe, compose } from "ramda";
 import "./ParametersList.scss";
 import useDualList from "../../common/useDualList";
+import { ParameterLine } from "./ParameterLine";
 
-interface ParametersListProps extends FieldArrayRenderProps {
-  method: QueryMetadata;
+interface ParametersListProps<T> extends FieldArrayRenderProps {
+  method: QueryMetadata<T>;
 }
 
 export function ParametersListWrapper({ values }: { values: QueryParameters }) {
   return <FieldArray name="parameters" render={props => {
-    const method = apiStructure[values.category].methods[values.method];
+    const category = apiStructure[values.category];
+    if (!category) {
+      return null;
+    }
+    const method = category.methods[values.method];
     if (method) {
       return <ParametersList method={method} {...props} />;
     } else {
@@ -24,9 +28,12 @@ export function ParametersListWrapper({ values }: { values: QueryParameters }) {
   }/>;
 }
 
-export function ParametersList({ method, form, ...props }: ParametersListProps) {
+export function ParametersList<T extends BaseParameters = BaseParameters>({ method, form, ...props }: ParametersListProps<T>) {
+  const parameters = useMemo<string[]>(() => compose(map(String),
+    map((param: keyof T | MethodParameter<T>) => isStringParameter(param) ? param : param.name)
+  )(method.parameters), [method.parameters]);
 
-  const [available, taken, take, release, swap] = useDualList(method.parameters as string[]);
+  const [available, taken, take, release, swap] = useDualList(parameters);
 
   useEffect(() => {
     console.log(`Available: ${available}`);
@@ -50,7 +57,7 @@ export function ParametersList({ method, form, ...props }: ParametersListProps) 
   };
 
   const addParam = (name?: string) => {
-    const param = take(name);
+    const param = take(name) || "";
     props.push({
       name: param,
       value: ""
@@ -74,45 +81,3 @@ export function ParametersList({ method, form, ...props }: ParametersListProps) 
     </div>}
   </div>;
 }
-;
-
-interface LineProps<T extends BaseParameters = BaseParameters> {
-  availableParameters: Array<keyof T>;
-  parameter: Parameter;
-  index: number;
-
-  changeValue(previous: string, current: string, index: number): void;
-
-  remove(parameter: string, index?: number): void;
-}
-
-const ParameterLine = <T extends BaseParameters = BaseParameters>({ availableParameters, parameter, changeValue, remove, index }:
-                                                                    LineProps) => {
-  const [currentParameter, setCurrentParameter] = useState(parameter.name);
-  const parameters = useMemo(() => pipe(concat([currentParameter]), uniq)(availableParameters as string[]), [currentParameter, availableParameters]);
-
-  return <div className="parameter-row">
-    <Field name={`parameters.${index}.name`}
-           render={() => <div className="parameter-select"><ParameterSelect
-             fields={parameters}
-             setParameter={(prev, cur) => {
-               console.log(`${prev} => ${cur}`);
-               setCurrentParameter(cur);
-               changeValue(prev, cur, index);
-             }
-             }/></div>}/>
-
-    <Field name={`parameters.${index}.value`}
-           render={({ field }: FieldProps<QueryParameters>) => <div className="parameter-input"><input
-             type="text" {...field}
-             placeholder={currentParameter}/></div>
-           }/>
-    <div>
-      <button type="button" onClick={() => remove(parameter.name, index)}>X</button>
-    </div>
-  </div>;
-  ;
-  ;
-  ;
-};
-;
