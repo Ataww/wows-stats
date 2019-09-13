@@ -8,6 +8,7 @@ import {
 import { EitherApiResponse, EuClient } from "./ApiClient";
 import { PersonalData } from "../domain/account";
 import { formatOptions } from "./util";
+import { AccountSearch } from "../search/account";
 
 export async function getPlayerProfile(
   id: number,
@@ -26,15 +27,20 @@ export async function getPlayerProfile(
   );
 }
 
-export async function findPlayer(
-  name: string,
+/**
+ * Fetch a list of players. See https://developers.wargaming.net/reference/all/wows/account/list/
+ * @param parameters The query parameters
+ * @param axiosOptions Optional parameters for axios
+ */
+export async function findPlayers(
+  parameters: AccountSearch,
   axiosOptions?: AxiosRequestConfig
 ): Promise<Either<string, ApiResponse<IdIndexedData<PersonalData>>>> {
   const response: EitherApiResponse<
     IdIndexedData<PersonalData>
   > = await EuClient.queryApi(
     "account/list",
-    formatOptions({ search: name, type: "exact" }),
+    formatOptions(parameters),
     axiosOptions
   );
   return response
@@ -45,7 +51,7 @@ export async function findPlayer(
     )
     .flatMap(val => {
       if (val.meta.count === 0) {
-        return Left(`No player found with name ${name}`);
+        return Left(`No player found with name ${parameters.search}`);
       }
       return Right(val);
     });
