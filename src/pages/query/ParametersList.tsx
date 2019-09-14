@@ -3,7 +3,7 @@ import { FieldArray, FieldArrayRenderProps } from "formik";
 import { Parameter, QueryParameters } from "../QueryBuilder";
 import { apiStructure, isStringParameter, MethodParameter, QueryMetadata } from "../../common";
 import { BaseParameters } from "../../search";
-import { isEmpty, map, pipe, compose } from "ramda";
+import { compose, isEmpty, map } from "ramda";
 import "./ParametersList.scss";
 import useDualList from "../../common/useDualList";
 import { ParameterLine } from "./ParameterLine";

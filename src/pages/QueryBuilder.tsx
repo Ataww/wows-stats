@@ -1,10 +1,11 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Formik, FormikActions, FormikProps } from "formik";
 import { accountsStructure, ApiMetadata } from "../common";
 import "./QueryBuilder.scss";
 import { EuClient } from "../repository/ApiClient";
 import QueryBuilderForm from "./query/Form";
 import { parse } from "json2csv";
+import { Card, CardActions, CardContent, Grid, makeStyles, Typography, Button, Link } from "@material-ui/core";
 
 export interface Parameter {
   name: string;
@@ -16,13 +17,48 @@ export interface QueryParameters {
   method: string;
   query: string;
   parameters: Parameter[]
-
 }
+
+const queryBuilderStyle = makeStyles(theme => ({}));
+
+const JsonCard: React.FC<{ value: any }> = ({ value }) => {
+  const [pretty, setPretty] = useState(false);
+  const formattedValue = useMemo(() =>
+    JSON.stringify(value, null, pretty ? 2 : undefined), [pretty, value]);
+  return (<Card>
+    <CardContent>
+      <Typography variant={"h5"}>JSON result</Typography>
+      <textarea cols={80} rows={10} value={formattedValue} readOnly/>
+    </CardContent>
+    <CardActions>
+      <Button component={"a"} size={"small"}
+              href={window.URL.createObjectURL(new Blob([formattedValue], { type: "text/json" }))}
+              download={"result.json"}
+      >Download</Button>
+      <Button size={"small"} onClick={() => setPretty(!pretty)}>Pretty print</Button>
+    </CardActions>
+  </Card>);
+};
+
+const CsvCard: React.FC<{ value: string }> = ({ value }) => {
+  return (<Card>
+    <CardContent>
+      <Typography variant={"h5"}>CSV result</Typography>
+      <textarea cols={80} rows={10} value={value} readOnly/>
+    </CardContent>
+    <CardActions>
+      <Button component={"a"} size={"small"} href={window.URL.createObjectURL(new Blob([value], { type: "text/csv" }))}
+              download={"result.csv"}
+      >Download</Button>
+    </CardActions>
+  </Card>);
+};
 
 const QueryBuilder: React.FC = () => {
   const [jsonResult, setJsonResult] = useState<any>(null);
   const [csvResult, setCsvResult] = useState("");
-  const [pretty, setPretty] = useState(false);
+  const classes = queryBuilderStyle();
+
 
   useEffect(() => {
     if (jsonResult) {
@@ -38,8 +74,8 @@ const QueryBuilder: React.FC = () => {
     actions.setSubmitting(false);
   }, []);
 
-  return (<div>
-    <h4>Query Builder</h4>
+  return (<Grid container spacing={3}>
+    <Typography variant={"h4"}>Query Builder</Typography>
     <Formik
       initialValues={{
         query: "",
@@ -49,24 +85,12 @@ const QueryBuilder: React.FC = () => {
       }}
       onSubmit={submitHandler}
     >
-      {(props: FormikProps<QueryParameters>) => <div><QueryBuilderForm {...props}  />
-        <div>
-          <h4>JSON result</h4>
-          <textarea cols={80} rows={10} value={JSON.stringify(jsonResult)} readOnly/>
-        </div>
-        <div>
-          <h4>CSV result</h4>
-          <textarea cols={80} rows={10} value={csvResult} readOnly/>
-        </div>
-        <a href={window.URL.createObjectURL(new Blob([csvResult], { type: "text/csv" }))}
-           download={"result.csv"}
-           id="csv-download"
-        >
-          Download CSV
-        </a>
-      </div>}
+      {(props: FormikProps<QueryParameters>) => <Grid container spacing={1} direction={"column"}><QueryBuilderForm {...props}  />
+        <Grid item><JsonCard value={jsonResult}/></Grid>
+        <Grid item><CsvCard value={csvResult}/></Grid>
+      </Grid>}
     </Formik>
-  </div>);
+  </Grid>);
 };
 
 export default QueryBuilder;

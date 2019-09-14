@@ -2,10 +2,15 @@
   color: #555555;
 }
 
-#csv-download {
+.button {
   text-decoration: none;
   padding: 2px;
   color: #555555;
   background: #61dafb;
   border: 3px solid #61dafb;
+}
+
+button.button {
+  font-size: initial;
+  margin-left: 5px;
 }
