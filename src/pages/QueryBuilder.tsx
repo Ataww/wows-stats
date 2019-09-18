@@ -1,10 +1,10 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { Field, FieldProps, Form, Formik, FormikProps } from "formik";
-import { accountsStructure, ApiMetadata, apiStructure, CategoryMetadata } from "../common";
-import "./QueryBuilder.scss";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { Formik, FormikActions, FormikProps } from "formik";
+import { accountsStructure, ApiMetadata } from "../common";
 import { EuClient } from "../repository/ApiClient";
-import { ParametersListWrapper } from "./query/ParametersList";
+import QueryBuilderForm from "./query/Form";
 import { parse } from "json2csv";
+import { Card, CardActions, CardContent, Grid, makeStyles, Typography, Button, Link } from "@material-ui/core";
 
 export interface Parameter {
   name: string;
@@ -16,80 +16,48 @@ export interface QueryParameters {
   method: string;
   query: string;
   parameters: Parameter[]
-
 }
 
-const QueryBuilderForm = ({ values, touched, errors, setFieldValue }: FormikProps<QueryParameters>) => {
-  const [category, setCategory] = useState<CategoryMetadata>(accountsStructure);
-  const [methods, setMethods] = useState<React.ReactNode[]>([]);
+const queryBuilderStyle = makeStyles(theme => ({}));
 
-  const categories = useMemo(() => Object.keys(apiStructure)
-    .map(key => <option key={key}
-                        value={key}>{apiStructure[key].name}</option>
-    ), []);
+const JsonCard: React.FC<{ value: any }> = ({ value }) => {
+  const [pretty, setPretty] = useState(false);
+  const formattedValue = useMemo(() =>
+    JSON.stringify(value, null, pretty ? 2 : undefined), [pretty, value]);
+  return (<Card>
+    <CardContent>
+      <Typography variant={"h5"}>JSON result</Typography>
+      <textarea cols={80} rows={10} value={formattedValue} readOnly/>
+    </CardContent>
+    <CardActions>
+      <Button component={"a"} size={"small"}
+              href={window.URL.createObjectURL(new Blob([formattedValue], { type: "text/json" }))}
+              download={"result.json"}
+      >Download</Button>
+      <Button size={"small"} onClick={() => setPretty(!pretty)}>Pretty print</Button>
+    </CardActions>
+  </Card>);
+};
 
-  useEffect(() => {
-    setCategory(apiStructure[values.category]);
-    if (category) {
-      setFieldValue("method", Object.keys(category.methods)[0]);
-    }
-  }, [values.category, setFieldValue, category]);
-
-  useEffect(() => {
-    const nodes: React.ReactNode[] = [];
-    if (category) {
-      for (const path in category.methods) {
-        nodes.push(<option key={path} value={path}>{category.methods[path].method}</option>);
-      }
-      setMethods(nodes);
-    }
-  }, [category]);
-
-  useEffect(() => {
-    const path = `${values.category}/${values.method}`;
-    const parameters: any = {};
-    values.parameters.forEach(p => {
-      parameters[p.name] = p.value;
-    });
-    setFieldValue("query", EuClient.formatQuery(path, parameters));
-  }, [values, setFieldValue]);
-
-  return (
-    <Form>
-      <Field name={"query"} render={({ field, form }: FieldProps<QueryParameters>) => <div>
-        <label htmlFor="query-field">Query preview</label>
-        <textarea id="query-field" cols={80} rows={4} {...field} placeholder="query" onChange={() => {
-        }}>
-                </textarea>
-        {form.touched.query && form.errors.query && form.errors.query}
-      </div>}/>
-      <Field name={"category"} render={({ field }: FieldProps<QueryParameters>) => (
-        <div>
-          <label htmlFor="category-select">Category</label>
-          <select id="category-select" {...field}>
-            {categories}
-          </select>
-          {touched.category && errors.category && errors.category}
-        </div>)}/>
-      <Field name={"method"} render={({ field }: FieldProps<QueryParameters>) => (
-        <div>
-          <label htmlFor="method-select">Method</label>
-          <select id="method-select" {...field}>
-            {methods}
-          </select>
-        </div>
-      )}/>
-      <ParametersListWrapper values={values}/>
-      <div>
-        <button type={"submit"}>Run query</button>
-      </div>
-    </Form>
-  );
+const CsvCard: React.FC<{ value: string }> = ({ value }) => {
+  return (<Card>
+    <CardContent>
+      <Typography variant={"h5"}>CSV result</Typography>
+      <textarea cols={80} rows={10} value={value} readOnly/>
+    </CardContent>
+    <CardActions>
+      <Button component={"a"} size={"small"} href={window.URL.createObjectURL(new Blob([value], { type: "text/csv" }))}
+              download={"result.csv"}
+      >Download</Button>
+    </CardActions>
+  </Card>);
 };
 
 const QueryBuilder: React.FC = () => {
   const [jsonResult, setJsonResult] = useState<any>(null);
   const [csvResult, setCsvResult] = useState("");
+  const classes = queryBuilderStyle();
+
 
   useEffect(() => {
     if (jsonResult) {
@@ -97,10 +65,16 @@ const QueryBuilder: React.FC = () => {
         flatten: true
       }));
     }
-  }, [jsonResult, csvResult]);
+  }, [jsonResult]);
 
-  return (<div>
-    <h4>Query Builder</h4>
+  const submitHandler = useCallback(async (values: QueryParameters, actions: FormikActions<QueryParameters>) => {
+    const response = await EuClient.runQuery(values.query);
+    response.cata(({ error }) => setJsonResult(error), val => setJsonResult(val.data));
+    actions.setSubmitting(false);
+  }, []);
+
+  return (<Grid container spacing={3}>
+    <Typography variant={"h4"}>Query Builder</Typography>
     <Formik
       initialValues={{
         query: "",
@@ -108,24 +82,14 @@ const QueryBuilder: React.FC = () => {
         method: Object.keys(accountsStructure.methods)[0],
         parameters: []
       }}
-      onSubmit={async (values, actions) => {
-        const response = await EuClient.runQuery(values.query);
-        response.cata(({ error }) => setJsonResult(error), val => setJsonResult(val.data));
-        actions.setSubmitting(false);
-      }}
+      onSubmit={submitHandler}
     >
-      {(props: FormikProps<QueryParameters>) => <div><QueryBuilderForm {...props}  />
-        <div>
-          <h4>JSON result</h4>
-          <textarea cols={80} rows={10} value={JSON.stringify(jsonResult)} readOnly/>
-        </div>
-        <div>
-          <h4>CSV result</h4>
-          <textarea cols={80} rows={10} value={csvResult} readOnly/>
-        </div>
-      </div>}
+      {(props: FormikProps<QueryParameters>) => <Grid container spacing={1} direction={"column"}><QueryBuilderForm {...props}  />
+        <Grid item><JsonCard value={jsonResult}/></Grid>
+        <Grid item><CsvCard value={csvResult}/></Grid>
+      </Grid>}
     </Formik>
-  </div>);
+  </Grid>);
 };
 
 export default QueryBuilder;

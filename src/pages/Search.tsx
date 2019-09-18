@@ -1,22 +1,22 @@
 import Axios from "axios";
-import React, {useCallback, useEffect, useMemo, useState} from "react";
-import {Link} from "react-router-dom";
-import {Loading} from "../components";
-import {findPlayer} from "../repository/PlayerRepository";
-import {PersonalData} from "../domain/account";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
+import { Loading } from "../components";
+import { findPlayers } from "../repository/PlayerRepository";
+import { PersonalData } from "../domain/account";
 
 export default () => {
   const [query, setQuery] = useState("");
-  const [result, setResult] = useState<PersonalData>();
+  const [result, setResult] = useState<PersonalData[]>([]);
   const [isSearching, setSearching] = useState(false);
   const [error, setError] = useState<string>();
 
   const cancelHandle = useMemo(() => Axios.CancelToken.source(), []);
   const doSearch = useCallback(async () => {
-    setResult(undefined);
+    setResult([]);
     setError(undefined);
     setSearching(true);
-    const found = await findPlayer(query, {
+    const found = await findPlayers({ search: query }, {
       cancelToken: cancelHandle.token
     });
     found.cata(
@@ -24,7 +24,7 @@ export default () => {
         setError(err);
       },
       response => {
-        setResult(Object.values(response.data)[0]);
+        setResult(Object.values(response.data));
       }
     );
     setSearching(false);
@@ -52,9 +52,13 @@ export default () => {
         </div>
       );
     } else if (result) {
-      return <Link to={`profile/${result.account_id}`}>{result.nickname}</Link>;
+      return <div>
+        {result.map(account => <p>
+          <Link to={`profile/${account.account_id}`}>{account.nickname}</Link>
+        </p>)}
+      </div>;
     } else if (isSearching) {
-      return <Loading text="Searching" />;
+      return <Loading text="Searching"/>;
     }
     return null;
   }, [result, error, isSearching]);
@@ -75,7 +79,7 @@ export default () => {
         <button onClick={doSearch}>Search</button>
       </div>
       <div>
-        <ResultDisplay />
+        <ResultDisplay/>
       </div>
     </form>
   );
