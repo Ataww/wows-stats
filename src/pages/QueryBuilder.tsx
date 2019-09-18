@@ -1,7 +1,6 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Formik, FormikActions, FormikProps } from "formik";
 import { accountsStructure, ApiMetadata } from "../common";
-import "./QueryBuilder.scss";
 import { EuClient } from "../repository/ApiClient";
 import QueryBuilderForm from "./query/Form";
 import { parse } from "json2csv";

@@ -10,7 +10,9 @@ const QueryBuilder = React.lazy(() => import("./pages/QueryBuilder"));
 
 const appStyle = makeStyles(theme => ({
     app: {
-      display: "flex"
+      display: "flex",
+      width: 700,
+      margin: "auto"
     },
     header: {
       backgroundColor: "#282c34",
@@ -34,9 +36,7 @@ const appStyle = makeStyles(theme => ({
       paddingLeft: "1ch"
     },
     content: {
-      flexGrow: 1,
-      height: "100vh",
-      overflow: "auto"
+      flexGrow: 1
     },
     container: {
       paddingTop: theme.spacing(4),
@@ -73,15 +73,18 @@ const App: React.FC = () => {
                 <Route
                   exact
                   path="/profile/:id"
-                  render={({ match }) => <Profile id={match.params.id}/>}
+                  render={({ match: {params: {id}} }) =>
+                    <Switch>
+                      <Route path={"/season/:season"}
+                             render={({ match: subMatch }) =>
+                               <Season id={id}
+                                       seasonId={subMatch.params.season}/>}/>
+                      <Route render={() =>
+                        <Profile id={id}/>}/>
+                    </Switch>
+                  }
                 />
-                <Route
-                  path="/profile/:id/season/:season"
-                  render={({ match }) => (
-                    <Season id={match.params.id} seasonId={match.params.season}/>
-                  )}
-                />
-                <Route path={"/query"} render={() => <QueryBuilder/>}/>
+                <Route path={"/query"} component={QueryBuilder}/>
               </Switch>
             </Suspense>
           </Container>

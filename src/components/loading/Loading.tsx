@@ -1,11 +1,15 @@
 import React from "react";
 import "./loading.scss";
 
-export default (props: { text?: string }) => (
-  <p className="saving">
-    {props.text || "Loading"}
+const Loading = (props: { text?: string|null }) => (
+  <div className="saving">
+    {props.text && "Loading"}
     <span>.</span>
     <span>.</span>
     <span>.</span>
-  </p>
+  </div>
 );
+
+export default Loading;
+
+export const DotsLoading = () => <Loading text={null}/>;

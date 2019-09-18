@@ -7,6 +7,7 @@ import { compose, isEmpty, map } from "ramda";
 import "./ParametersList.scss";
 import useDualList from "../../common/useDualList";
 import { ParameterLine } from "./ParameterLine";
+import { Button, Grid, InputLabel } from "@material-ui/core";
 
 interface ParametersListProps<T> extends FieldArrayRenderProps {
   method: QueryMetadata<T>;
@@ -69,15 +70,18 @@ export function ParametersList<T extends BaseParameters = BaseParameters>({ meth
     props.remove(index);
   };
 
-  return <div className="parameters-list">
+  return <Grid container spacing={1}>
+    <Grid item xs={12}>
+      <InputLabel>Parameters</InputLabel>
+    </Grid>
     {form.values.parameters.map((p: Parameter, idx: number) => <ParameterLine availableParameters={available}
                                                                               parameter={p}
                                                                               changeValue={changeValue}
                                                                               remove={removeParam} key={idx}
                                                                               index={idx}/>)}
     {!isEmpty(available) &&
-    <div>
-      <button type="button" onClick={() => addParam()}>Add parameter</button>
-    </div>}
-  </div>;
+    <Grid item xs={12}>
+      <Button onClick={() => addParam()} variant={"outlined"} size={"small"}>Add parameter</Button>
+    </Grid>}
+  </Grid>;
 }
