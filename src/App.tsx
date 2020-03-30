@@ -6,6 +6,7 @@ import { AppBar, Container, CssBaseline, Grid, Link, makeStyles, Toolbar, Typogr
 const Profile = React.lazy(() => import("./pages/Profile"));
 const Search = React.lazy(() => import("./pages/Search"));
 const Season = React.lazy(() => import("./pages/Season"));
+const GraphQl = React.lazy(() => import("./pages/Graphql"));
 const QueryBuilder = React.lazy(() => import("./pages/QueryBuilder"));
 
 const appStyle = makeStyles(theme => ({
@@ -60,6 +61,7 @@ const App: React.FC = () => {
             <Grid justify={"flex-end"} container spacing={1}>
               <Link className={classes.link} component={AdapterLink} to={"/"}>Home</Link>
               <Link className={classes.link} component={AdapterLink} to={"/query"}>Query</Link>
+              <Link className={classes.link} component={AdapterLink} to={"/graphql"}>GraphQl</Link>
             </Grid>
           </Toolbar>
         </AppBar>
@@ -70,10 +72,11 @@ const App: React.FC = () => {
             <Suspense fallback={<div><Loading/></div>}>
               <Switch>
                 <Route exact path="/" component={Search}/>
+                <Route path="/graphql" component={GraphQl}/>
                 <Route
                   exact
                   path="/profile/:id"
-                  render={({ match: {params: {id}} }) =>
+                  render={({ match: { params: { id } } }) =>
                     <Switch>
                       <Route path={"/season/:season"}
                              render={({ match: subMatch }) =>

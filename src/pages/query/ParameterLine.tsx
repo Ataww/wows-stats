@@ -1,10 +1,10 @@
 import { BaseParameters } from "../../search";
 import { Parameter, QueryParameters } from "../QueryBuilder";
 import React, { useMemo, useState } from "react";
-import { concat, map, uniq, pipe } from "ramda";
+import { concat, map, pipe, uniq } from "ramda";
 import { Field, FieldProps } from "formik";
 import { ParameterSelect } from "./ParameterSelect";
-import { Button, Grid, IconButton, Input } from "@material-ui/core";
+import { Grid, IconButton, Input } from "@material-ui/core";
 import { Delete } from "@material-ui/icons";
 
 export interface LineProps<T extends BaseParameters = BaseParameters> {

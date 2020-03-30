@@ -1,0 +1,15 @@
+{
+  "name": "WG API GraphQL",
+  "schemaPath": "schema.graphql.json",
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "http://localhost:9090/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}

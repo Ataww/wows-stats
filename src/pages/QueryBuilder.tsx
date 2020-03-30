@@ -4,7 +4,7 @@ import { accountsStructure, ApiMetadata } from "../common";
 import { EuClient } from "../repository/ApiClient";
 import QueryBuilderForm from "./query/Form";
 import { parse } from "json2csv";
-import { Card, CardActions, CardContent, Grid, makeStyles, Typography, Button, Link } from "@material-ui/core";
+import { Button, Card, CardActions, CardContent, Grid, Typography } from "@material-ui/core";
 
 export interface Parameter {
   name: string;
@@ -17,8 +17,6 @@ export interface QueryParameters {
   query: string;
   parameters: Parameter[]
 }
-
-const queryBuilderStyle = makeStyles(theme => ({}));
 
 const JsonCard: React.FC<{ value: any }> = ({ value }) => {
   const [pretty, setPretty] = useState(false);
@@ -56,8 +54,6 @@ const CsvCard: React.FC<{ value: string }> = ({ value }) => {
 const QueryBuilder: React.FC = () => {
   const [jsonResult, setJsonResult] = useState<any>(null);
   const [csvResult, setCsvResult] = useState("");
-  const classes = queryBuilderStyle();
-
 
   useEffect(() => {
     if (jsonResult) {
@@ -84,7 +80,8 @@ const QueryBuilder: React.FC = () => {
       }}
       onSubmit={submitHandler}
     >
-      {(props: FormikProps<QueryParameters>) => <Grid container spacing={1} direction={"column"}><QueryBuilderForm {...props}  />
+      {(props: FormikProps<QueryParameters>) => <Grid container spacing={1}
+                                                      direction={"column"}><QueryBuilderForm {...props}  />
         <Grid item><JsonCard value={jsonResult}/></Grid>
         <Grid item><CsvCard value={csvResult}/></Grid>
       </Grid>}
